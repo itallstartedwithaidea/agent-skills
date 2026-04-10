@@ -1,0 +1,27 @@
+{
+  "name": "@itallstartedwithaidea/agent-skills",
+  "version": "1.0.0",
+  "description": "The definitive open-source agent skills library for AI-powered Google Ads management. 73+ skills across 10 categories. Built for googleadsagent.ai™.",
+  "homepage": "https://googleadsagent.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itallstartedwithaidea/agent-skills.git"
+  },
+  "keywords": [
+    "agent-skills",
+    "google-ads",
+    "ai-agent",
+    "claude-code",
+    "cursor",
+    "mcp",
+    "cloudflare-workers",
+    "advertising",
+    "automation"
+  ],
+  "author": "itallstartedwithaidea",
+  "license": "MIT",
+  "scripts": {
+    "validate": "bash scripts/validate-skills.sh",
+    "count": "bash scripts/count-skills.sh"
+  }
+}
