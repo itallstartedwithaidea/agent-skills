@@ -85,26 +85,43 @@ Full format specification: [docs/skill-format.md](docs/skill-format.md) | Offici
 
 ## Quick Start
 
-### Install
+### Claude Code (Plugin Marketplace)
 
-```bash
-git clone https://github.com/itallstartedwithaidea/agent-skills.git
-cd agent-skills
+Register this repo as a plugin marketplace, then install any skill set:
+
+```
+/plugin marketplace add itallstartedwithaidea/agent-skills
 ```
 
-### Use with Claude Code
+Then install by category:
 
-Point Claude at the skills directory:
+```
+/plugin install google-ads-skills@googleadsagent-skills
+/plugin install ai-agent-engineering-skills@googleadsagent-skills
+/plugin install claude-mythos-skills@googleadsagent-skills
+/plugin install software-dev-skills@googleadsagent-skills
+/plugin install security-skills@googleadsagent-skills
+/plugin install all-skills@googleadsagent-skills
+```
+
+### Claude Code (Direct)
+
+Point Claude at any skill directly:
 
 ```
 /read skills/google-ads/keyword-research/SKILL.md
 ```
 
-Or add the repo to your project and Claude will discover skills via YAML frontmatter.
+### Cursor
 
-### Use with Cursor
+Add the `skills/` directory to your workspace. Cursor loads `SKILL.md` files automatically via YAML frontmatter.
 
-Add the `skills/` directory to your workspace. Cursor loads `SKILL.md` files automatically when they match the agent skills format.
+### Manual Install
+
+```bash
+git clone https://github.com/itallstartedwithaidea/agent-skills.git
+cd agent-skills
+```
 
 ### Validate all skills
 
