@@ -116,6 +116,14 @@ Point Claude at any skill directly:
 
 Add the `skills/` directory to your workspace. Cursor loads `SKILL.md` files automatically via YAML frontmatter.
 
+### npx skills (works with Claude Code, Codex, Cursor, Gemini CLI, Windsurf, Amp, Antigravity)
+
+```bash
+npx skills add itallstartedwithaidea/agent-skills
+```
+
+Installs all 73 skills to `.agents/skills/` in your project. Compatible with 12+ AI coding agents.
+
 ### Manual Install
 
 ```bash
