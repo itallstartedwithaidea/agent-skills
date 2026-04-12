@@ -1,3 +1,9 @@
+---
+name: react-native-guidelines
+description: >-
+  React Native Guidelines codifies 16 rules across 7 sections—Performance, Layout, Animation, Images, State, Architecture, and Platform—that prevent the most common pitfalls in cross-platform mobile development.
+---
+
 # React Native Guidelines
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

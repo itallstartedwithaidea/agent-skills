@@ -1,3 +1,9 @@
+---
+name: ai-chat-studio
+description: >-
+  AI Chat Studio provides a multi-LLM chat orchestration framework with 300+ assistant presets, intelligent model routing, and conversation management.
+---
+
 # AI Chat Studio
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

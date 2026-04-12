@@ -1,3 +1,9 @@
+---
+name: web-design-guidelines
+description: >-
+  Web Design Guidelines encodes 100+ rules covering accessibility, focus states, forms, animation, typography, images, performance, navigation, dark mode, touch targets, and internationalization.
+---
+
 # Web Design Guidelines
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

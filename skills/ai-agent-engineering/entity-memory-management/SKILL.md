@@ -1,3 +1,9 @@
+---
+name: entity-memory-management
+description: >-
+  Entity Memory Management is the systematic extraction, persistence, and retrieval of named entities across agent sessions, enabling long-term contextual awareness that transforms transient conversations into persistent relationships.
+---
+
 # Entity Memory Management
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

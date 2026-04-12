@@ -1,3 +1,9 @@
+---
+name: long-horizon-workflows
+description: >-
+  Long-Horizon Workflows enable AI agents to execute multi-hour, multi-phase autonomous pipelines that far exceed the scope of a single conversation turn.
+---
+
 # Long-Horizon Workflows
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

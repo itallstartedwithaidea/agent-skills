@@ -1,3 +1,9 @@
+---
+name: react-best-practices
+description: >-
+  React Best Practices codifies 40+ rules across 8 priority categories, from Critical (eliminating waterfalls, reducing bundle size) to Low-Medium (JavaScript micro-optimizations).
+---
+
 # React Best Practices
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

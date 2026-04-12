@@ -1,3 +1,9 @@
+---
+name: google-ads-audit
+description: >-
+  The Google Ads Account Audit skill executes a comprehensive, pattern-driven analysis of any Google Ads account using a proprietary 1,000-pattern knowledge base.
+---
+
 # Google Ads Account Audit
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

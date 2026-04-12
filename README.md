@@ -3,19 +3,33 @@
 </p>
 
 <p align="center">
-  <strong>73 production-ready skills for AI-powered Google Ads management.</strong><br>
-  Built for <a href="https://googleadsagent.ai/tools/auditor/app">Buddy Agent</a> at <a href="https://googleadsagent.ai">googleadsagent.ai</a>. Works with Claude Code, Cursor, Codex, and Gemini.
+  <strong>73 skills for AI-powered Google Ads management, built from 15+ years of hands-on experience.</strong><br>
+  Compatible with Claude Code, Cursor, Codex, and Gemini CLI. Follows the <a href="https://github.com/agentskills/agentskills">Agent Skills specification</a>.
 </p>
 
 [English](README.md) | [Francais](README.fr.md) | [Espanol](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
 
 ---
 
+## Why This Repo?
+
+These skills encode what we learned running Google Ads for hundreds of accounts across every industry vertical — from $500/month local businesses to $500K/month ecommerce brands. Every pattern, threshold, and best practice comes from real campaign data and real optimization decisions, not generated from documentation.
+
+The skills power [Buddy Agent](https://googleadsagent.ai/tools/auditor/app), the AI advertising agent at [googleadsagent.ai](https://googleadsagent.ai), which manages live Google Ads accounts through the API with a 1,000-pattern knowledge base, multi-model routing (Claude, GPT, Gemini), and persistent entity memory.
+
+---
+
 ## What Does a Skill Look Like?
 
-Every skill is a single `SKILL.md` file in a named directory. Here is a real skill from this repo — **Keyword Research** (`skills/google-ads/keyword-research/SKILL.md`):
+Every skill is a `SKILL.md` file with YAML frontmatter per the [Agent Skills spec](https://github.com/agentskills/agentskills). Here is a real skill from this repo:
 
 ```markdown
+---
+name: keyword-research
+description: >-
+  Systematic keyword discovery, expansion, and optimization for Google Ads campaigns.
+---
+
 # Keyword Research
 
 ## Description
@@ -23,8 +37,6 @@ Every skill is a single `SKILL.md` file in a named directory. Here is a real ski
 Systematic keyword discovery, expansion, and optimization for Google Ads.
 Builds keyword universes from seed keywords through semantic expansion,
 competitor mining, search term analysis, and intent-based grouping.
-Assigns match types based on conversion probability and manages negative
-keyword lists at account, campaign, and ad group levels.
 
 ## Use When
 
@@ -42,8 +54,6 @@ function assignMatchType(keyword) {
     return 'EXACT';
   if (keyword.intent === 'transactional' && keyword.wordCount >= 3)
     return 'PHRASE';
-  if (keyword.volume > 5000 && keyword.competitorPresence)
-    return 'BROAD';
   return 'PHRASE';
 }
 ​```
@@ -61,41 +71,54 @@ function assignMatchType(keyword) {
 
 - [Ad Copy Generation](../google-ads/ad-copy-generation/)
 - [Competitor Analysis](../google-ads/competitor-analysis/)
-- [Quality Score Optimization](../google-ads/quality-score-optimization/)
 ```
 
-That is the complete format. Every skill follows this structure:
+Every skill follows this structure:
 
 <p align="center">
   <img src="assets/images/skill-anatomy.png" alt="Anatomy of a SKILL.md file" width="800">
 </p>
 
-See the [full format spec](docs/skill-format.md) for details.
+Full format specification: [docs/skill-format.md](docs/skill-format.md) | Official spec: [agentskills/agentskills](https://github.com/agentskills/agentskills)
 
 ---
 
 ## Quick Start
 
-### Clone and use directly
+### Install
 
 ```bash
 git clone https://github.com/itallstartedwithaidea/agent-skills.git
 cd agent-skills
 ```
 
+### Use with Claude Code
+
+Point Claude at the skills directory:
+
+```
+/read skills/google-ads/keyword-research/SKILL.md
+```
+
+Or add the repo to your project and Claude will discover skills via YAML frontmatter.
+
+### Use with Cursor
+
+Add the `skills/` directory to your workspace. Cursor loads `SKILL.md` files automatically when they match the agent skills format.
+
 ### Validate all skills
 
 ```bash
-npm run validate
+bash scripts/validate-skills.sh
 ```
 
 ### Count skills by category
 
 ```bash
-npm run count
+bash scripts/count-skills.sh
 ```
 
-After cloning, point your AI agent at the `skills/` directory. Each `SKILL.md` is self-contained and loadable on demand.
+Each `SKILL.md` is self-contained. Point your agent at it, and it has everything it needs.
 
 ---
 
@@ -120,12 +143,13 @@ After cloning, point your AI agent at the `skills/` directory. Each `SKILL.md` i
 
 ## SKILL.md Format
 
-Every skill requires these sections:
+Follows the [Agent Skills specification](https://github.com/agentskills/agentskills). Every skill has YAML frontmatter and these required sections:
 
 | Section | Purpose |
 |---------|---------|
+| YAML frontmatter (`name`, `description`) | Machine-readable metadata for discovery and indexing |
 | `# Title` | Human-readable skill name |
-| `## Description` | 2-5 sentence explanation (indexed for search) |
+| `## Description` | 2-5 sentence explanation |
 | `## Use When` | Bullet list of trigger scenarios |
 | `## Implementation` | Code snippets, algorithms, procedures |
 | `## Platform Compatibility` | Cursor / Claude Code / Codex / Gemini support table |
@@ -171,18 +195,6 @@ Full architecture documentation: [docs/architecture.md](docs/architecture.md)
 
 ---
 
-## The Platform
-
-[googleadsagent.ai](https://googleadsagent.ai) is the AI-native Google Ads management platform. **Buddy Agent** is the intelligent orchestrator at its core:
-
-- **1,000-Pattern Knowledge Base** — Expert Google Ads patterns with TF-IDF matching, injected into every AI call
-- **Multi-Model Routing** — Claude, GPT, and Gemini with tool calling on all three providers
-- **Entity Memory** — Persistent memory tracking campaigns, pain points, metrics, and decisions across sessions via Cloudflare KV
-- **Proactive Intelligence** — AI autonomously searches the web and re-pulls Google Ads data mid-analysis
-- **Agent Skills Integration** — Loads skills from this repository on demand
-
----
-
 ## Contributing
 
 We welcome contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
@@ -190,22 +202,24 @@ We welcome contributions. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 To add a new skill:
 
 1. Create a directory under the appropriate `skills/` category
-2. Add a `SKILL.md` following the [format spec](docs/skill-format.md)
-3. Run `npm run validate` to confirm it passes
+2. Add a `SKILL.md` with YAML frontmatter (`name`, `description`) and required sections
+3. Run `bash scripts/validate-skills.sh` to confirm it passes
 4. Submit a pull request
 
 ---
 
-## Credits
+## Acknowledgments
 
-Agent Skills was informed by these open-source projects:
+We studied these open-source projects while building Agent Skills:
 
-| Repository | Stars | What We Learned |
-|------------|-------|-----------------|
-| [obra/superpowers](https://github.com/obra/superpowers) | 148k | Agent architecture, autonomous workflow design |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 152k | Claude Code best practices, prompt engineering |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 25k | Skills format specification, plugin architecture |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 18k | Scientific methodology for skill validation |
+| Repository | What We Studied |
+|------------|-----------------|
+| [agentskills/agentskills](https://github.com/agentskills/agentskills) | Official Agent Skills specification by Anthropic |
+| [anthropics/skills](https://github.com/anthropics/skills) | Reference skill implementations |
+| [obra/superpowers](https://github.com/obra/superpowers) | Agent architecture and autonomous workflow patterns |
+| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | Claude Code best practices |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Skills format specification |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | Scientific methodology for skill validation |
 
 ---
 
@@ -215,4 +229,4 @@ MIT License. See [LICENSE](LICENSE).
 
 ---
 
-Built by [John Williams](https://itallstartedwithaidea.com) | Powered by [googleadsagent.ai](https://googleadsagent.ai)
+Built by [John Williams](https://itallstartedwithaidea.com) — 15+ years in paid media, Lead at [Seer Interactive](https://www.seerinteractive.com) | Powered by [googleadsagent.ai](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: memory-persistence
+description: >-
+  Memory Persistence enables AI agents to maintain knowledge across sessions, transforming stateless inference calls into stateful, continuously improving systems.
+---
+
 # Memory Persistence
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: writing-plans
+description: >-
+  Writing Plans decomposes any implementation task into a sequence of atomic steps, each completable in 2-5 minutes, with exact file paths, complete code blocks, and verification commands.
+---
+
 # Writing Plans
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: observability
+description: >-
+  Observability implements structured logging, distributed tracing, and error monitoring for Cloudflare Workers and edge applications.
+---
+
 # Observability
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

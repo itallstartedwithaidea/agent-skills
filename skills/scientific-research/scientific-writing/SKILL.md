@@ -1,3 +1,9 @@
+---
+name: scientific-writing
+description: >-
+  Scientific Writing guides the production of research papers, abstracts, grant proposals, and supplementary materials with proper citation management, LaTeX formatting, and journal-specific template compliance.
+---
+
 # Scientific Writing
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: knowledge-base-rag
+description: >-
+  Knowledge Base RAG implements the complete Retrieval-Augmented Generation pipeline: document ingestion, intelligent chunking, embedding generation, vector store indexing, semantic retrieval, and grounded response generation.
+---
+
 # Knowledge Base RAG
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

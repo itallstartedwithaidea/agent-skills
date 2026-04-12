@@ -1,3 +1,9 @@
+---
+name: token-optimization
+description: >-
+  Token Optimization is the systematic reduction of token expenditure across agent operations without sacrificing output quality.
+---
+
 # Token Optimization
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

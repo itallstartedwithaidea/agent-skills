@@ -1,3 +1,9 @@
+---
+name: multi-harness-portability
+description: >-
+  Multi-Harness Portability is the engineering discipline of writing agent skills, prompts, and configurations that work across every major AI coding harness — Claude Code, Cursor, Codex, Gemini CLI, OpenCode, and beyond.
+---
+
 # Multi-Harness Portability
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

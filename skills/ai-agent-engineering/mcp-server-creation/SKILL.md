@@ -1,3 +1,9 @@
+---
+name: mcp-server-creation
+description: >-
+  MCP Server Creation is the skill of building Model Context Protocol servers that expose tools, resources, and capabilities to AI agents through a standardized interface.
+---
+
 # MCP Server Creation
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

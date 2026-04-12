@@ -1,3 +1,9 @@
+---
+name: geospatial-analysis
+description: >-
+  Geospatial Analysis provides workflows for satellite imagery processing, GIS operations with GeoPandas, spatial statistics, and Earth observation data analysis.
+---
+
 # Geospatial Analysis
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

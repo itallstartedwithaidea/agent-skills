@@ -1,3 +1,9 @@
+---
+name: agent-security-scanning
+description: >-
+  Agent Security Scanning detects vulnerabilities in AI-generated code before it reaches production.
+---
+
 # Agent Security Scanning
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

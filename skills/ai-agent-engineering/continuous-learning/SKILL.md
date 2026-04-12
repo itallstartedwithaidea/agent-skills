@@ -1,3 +1,9 @@
+---
+name: continuous-learning
+description: >-
+  Continuous Learning enables agents to automatically extract successful patterns from completed sessions and codify them into reusable skills, rules, and prompt refinements.
+---
+
 # Continuous Learning
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

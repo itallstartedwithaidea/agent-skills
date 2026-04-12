@@ -1,3 +1,9 @@
+---
+name: audience-targeting
+description: >-
+  The Audience Targeting skill orchestrates Google Ads' full audience ecosystem to reach the right users at every stage of the conversion funnel.
+---
+
 # Audience Targeting
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

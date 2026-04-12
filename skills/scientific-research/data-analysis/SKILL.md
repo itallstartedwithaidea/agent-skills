@@ -1,3 +1,9 @@
+---
+name: data-analysis
+description: >-
+  Data Analysis provides a structured framework for statistical analysis using pandas, numpy, and scipy, with visualization through matplotlib, seaborn, and plotly.
+---
+
 # Data Analysis
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

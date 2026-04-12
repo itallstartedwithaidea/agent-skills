@@ -1,3 +1,9 @@
+---
+name: machine-learning
+description: >-
+  Machine Learning provides end-to-end ML pipeline construction with PyTorch and scikit-learn, covering model selection, training, evaluation, interpretability, hyperparameter tuning, and experiment tracking.
+---
+
 # Machine Learning
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

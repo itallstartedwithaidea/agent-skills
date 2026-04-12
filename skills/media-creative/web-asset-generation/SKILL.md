@@ -1,3 +1,9 @@
+---
+name: web-asset-generation
+description: >-
+  Web Asset Generation automates the creation of favicons, PWA icons, Open Graph images, social media meta tags, and Apple touch icons from a single source image or brand specification.
+---
+
 # Web Asset Generation
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

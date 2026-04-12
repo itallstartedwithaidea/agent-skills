@@ -1,3 +1,9 @@
+---
+name: pmax-optimization
+description: >-
+  The Performance Max Optimization skill provides expert-level management of Google's most automated campaign type.
+---
+
 # Performance Max Optimization
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

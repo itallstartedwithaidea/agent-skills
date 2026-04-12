@@ -1,3 +1,9 @@
+---
+name: service-discovery
+description: >-
+  Service Discovery implements dynamic service registry, health check monitoring, and intelligent load balancing patterns inspired by Nacos for cloud-native applications.
+---
+
 # Service Discovery
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

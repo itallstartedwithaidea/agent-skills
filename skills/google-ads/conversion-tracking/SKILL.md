@@ -1,3 +1,9 @@
+---
+name: conversion-tracking
+description: >-
+  The Conversion Tracking skill provides end-to-end management of Google Ads conversion measurement infrastructure.
+---
+
 # Conversion Tracking
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: ci-cd-pipelines
+description: >-
+  CI/CD Pipelines defines production-grade continuous integration and deployment workflows using GitHub Actions with wrangler deploy, link validation, HTML validation, and automated quality gates.
+---
+
 # CI/CD Pipelines
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

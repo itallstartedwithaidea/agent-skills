@@ -1,3 +1,9 @@
+---
+name: codeql-semgrep
+description: >-
+  CodeQL & Semgrep integrates production-grade static analysis into agent workflows for deep vulnerability detection, custom rule authoring, and automated code review enforcement.
+---
+
 # CodeQL & Semgrep
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: subagent-driven-development
+description: >-
+  Subagent-Driven Development dispatches each discrete task to a fresh subagent with a clean context window, then subjects the output to a two-stage review before merging.
+---
+
 # Subagent-Driven Development
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

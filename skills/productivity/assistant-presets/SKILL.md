@@ -1,3 +1,9 @@
+---
+name: assistant-presets
+description: >-
+  Assistant Presets provides a framework for creating, testing, and deploying specialized AI assistant configurations for domain-specific tasks.
+---
+
 # Assistant Presets
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

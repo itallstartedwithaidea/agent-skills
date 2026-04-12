@@ -1,3 +1,9 @@
+---
+name: configuration-management
+description: >-
+  Configuration Management implements dynamic configuration with hot-reload capability, inspired by Nacos configuration management patterns.
+---
+
 # Configuration Management
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

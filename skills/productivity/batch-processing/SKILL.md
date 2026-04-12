@@ -1,3 +1,9 @@
+---
+name: batch-processing
+description: >-
+  Batch Processing enables parallel AI task execution with progress tracking, error handling, rate limiting, and result aggregation.
+---
+
 # Batch Processing
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

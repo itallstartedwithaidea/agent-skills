@@ -1,3 +1,9 @@
+---
+name: session-archaeology
+description: >-
+  Session Archaeology is the systematic excavation and analysis of past agent sessions to extract reusable patterns, identify recurring failure modes, and derive new skills from operational history.
+---
+
 # Session Archaeology
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

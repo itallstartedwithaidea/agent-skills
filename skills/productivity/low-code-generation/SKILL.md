@@ -1,3 +1,9 @@
+---
+name: low-code-generation
+description: >-
+  Low-Code Generation uses AI to produce forms, tables, dashboards, and workflow UIs from natural language descriptions or schema definitions.
+---
+
 # Low-Code Generation
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: view-transitions
+description: >-
+  View Transitions implements the React View Transition API for seamless animated transitions between UI states and routes.
+---
+
 # View Transitions
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

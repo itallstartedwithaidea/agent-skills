@@ -1,3 +1,9 @@
+---
+name: anthropic-tool-mastery
+description: >-
+  Anthropic Tool Mastery is the definitive skill for leveraging Claude's native tool_use capability to its fullest potential.
+---
+
 # Anthropic Tool Mastery
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

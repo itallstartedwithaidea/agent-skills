@@ -1,3 +1,9 @@
+---
+name: bioinformatics
+description: >-
+  Bioinformatics provides computational biology workflows for sequence analysis, protein structure prediction, single-cell RNA-seq with Scanpy, gene regulatory network inference, and pathway enrichment analysis.
+---
+
 # Bioinformatics
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

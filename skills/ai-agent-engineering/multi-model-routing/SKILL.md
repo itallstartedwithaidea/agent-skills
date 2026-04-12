@@ -1,3 +1,9 @@
+---
+name: multi-model-routing
+description: >-
+  Multi-Model Routing is the intelligent dispatch of agent tasks to the optimal model provider based on task characteristics, cost constraints, latency requirements, and availability.
+---
+
 # Multi-Model Routing
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: edge-deployment
+description: >-
+  Edge Deployment automates the deployment of frontend applications to Vercel and Cloudflare with auto-detection of 40+ frameworks, intelligent build configuration, and environment-specific settings.
+---
+
 # Edge Deployment
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

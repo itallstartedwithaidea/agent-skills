@@ -1,3 +1,9 @@
+---
+name: keyword-research
+description: >-
+  The Keyword Research skill delivers a systematic approach to keyword discovery, expansion, and optimization for Google Ads campaigns.
+---
+
 # Keyword Research
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

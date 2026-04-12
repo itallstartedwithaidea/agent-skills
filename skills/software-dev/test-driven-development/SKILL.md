@@ -1,3 +1,9 @@
+---
+name: test-driven-development
+description: >-
+  Test-Driven Development enforces the RED-GREEN-REFACTOR discipline on every code change an agent produces.
+---
+
 # Test-Driven Development
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

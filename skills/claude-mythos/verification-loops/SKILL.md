@@ -1,3 +1,9 @@
+---
+name: verification-loops
+description: >-
+  Verification Loops are systematic evaluation pipelines that validate agent outputs at every stage of execution.
+---
+
 # Verification Loops
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

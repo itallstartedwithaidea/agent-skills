@@ -1,3 +1,9 @@
+---
+name: workflow-orchestration
+description: >-
+  Workflow Orchestration provides a visual AI flow-building framework with MCP plugin support, conditional branching, parallel execution, and error recovery.
+---
+
 # Workflow Orchestration
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

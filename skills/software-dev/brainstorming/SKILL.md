@@ -1,3 +1,9 @@
+---
+name: brainstorming
+description: >-
+  Brainstorming is a Socratic design refinement skill that activates before any code is written.
+---
+
 # Brainstorming
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

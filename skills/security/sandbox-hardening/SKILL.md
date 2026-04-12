@@ -1,3 +1,9 @@
+---
+name: sandbox-hardening
+description: >-
+  Sandbox Hardening isolates agent execution environments using container sandboxing, permission boundaries, resource limits, and network segmentation.
+---
+
 # Sandbox Hardening
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

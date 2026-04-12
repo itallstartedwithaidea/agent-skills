@@ -1,3 +1,9 @@
+---
+name: secret-protection
+description: >-
+  Secret Protection prevents credential leaks across the development lifecycle through `.env` scanning, pre-commit hooks, secret rotation policies, and runtime detection.
+---
+
 # Secret Protection
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

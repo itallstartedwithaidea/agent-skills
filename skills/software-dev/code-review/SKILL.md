@@ -1,3 +1,9 @@
+---
+name: code-review
+description: >-
+  Code Review enforces a structured pre-merge quality gate with a checklist-driven evaluation, severity-classified findings, and mandatory resolution tracking.
+---
+
 # Code Review
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

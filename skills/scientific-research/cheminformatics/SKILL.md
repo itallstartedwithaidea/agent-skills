@@ -1,3 +1,9 @@
+---
+name: cheminformatics
+description: >-
+  Cheminformatics provides computational chemistry workflows using RDKit for molecular property prediction, virtual screening, ADMET analysis, molecular docking preparation, and chemical space exploration.
+---
+
 # Cheminformatics
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

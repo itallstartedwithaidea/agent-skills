@@ -1,3 +1,9 @@
+---
+name: remarketing-strategy
+description: >-
+  The Remarketing Strategy skill designs and implements cross-channel remarketing architectures that re-engage users at every stage of the conversion funnel.
+---
+
 # Remarketing Strategy
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: knowledge-base-injection
+description: >-
+  Knowledge Base Injection is the technique of dynamically injecting domain expertise into an agent's context at the moment it is most relevant, using TF-IDF pattern matching and semantic scoring.
+---
+
 # Knowledge Base Injection
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

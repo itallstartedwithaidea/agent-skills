@@ -1,3 +1,9 @@
+---
+name: quality-score-optimization
+description: >-
+  The Quality Score Optimization skill provides a systematic framework for diagnosing, tracking, and improving Quality Score across every keyword in a Google Ads account.
+---
+
 # Quality Score Optimization
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

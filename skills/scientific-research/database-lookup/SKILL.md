@@ -1,3 +1,9 @@
+---
+name: database-lookup
+description: >-
+  Database Lookup provides unified programmatic access to 78+ scientific and public databases spanning chemistry (PubChem, ChEMBL), biology (UniProt, COSMIC, Ensembl), clinical (ClinicalTrials.gov, FDA), economics (FRED, World Bank), and intellectual property (USPTO, EPO).
+---
+
 # Database Lookup
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

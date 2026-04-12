@@ -1,3 +1,9 @@
+---
+name: research-methodology
+description: >-
+  Research Methodology guides the agent through the complete scientific research lifecycle: hypothesis generation from literature gaps, experimental design with proper controls, systematic literature review, data collection protocols, and peer review preparation.
+---
+
 # Research Methodology
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

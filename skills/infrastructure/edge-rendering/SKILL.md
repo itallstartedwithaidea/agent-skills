@@ -1,3 +1,9 @@
+---
+name: edge-rendering
+description: >-
+  Edge Rendering generates and serves dynamic pages at the network edge, eliminating origin round-trips for content that varies by city, service, or user segment.
+---
+
 # Edge Rendering
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

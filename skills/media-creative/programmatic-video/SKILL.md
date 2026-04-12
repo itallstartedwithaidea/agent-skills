@@ -1,3 +1,9 @@
+---
+name: programmatic-video
+description: >-
+  Programmatic Video enables React-based video rendering with Remotion, where every frame is a React component and every animation is expressed in code.
+---
+
 # Programmatic Video
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

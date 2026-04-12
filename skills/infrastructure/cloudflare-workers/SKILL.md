@@ -1,3 +1,9 @@
+---
+name: cloudflare-workers
+description: >-
+  Cloudflare Workers provides comprehensive guidance for building edge-first applications using Durable Objects, KV, R2, D1, AI bindings, and Vectorize.
+---
+
 # Cloudflare Workers
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: shopping-ads
+description: >-
+  The Shopping Ads skill delivers end-to-end management of Google Shopping campaigns and Merchant Center product feeds.
+---
+
 # Shopping Ads
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

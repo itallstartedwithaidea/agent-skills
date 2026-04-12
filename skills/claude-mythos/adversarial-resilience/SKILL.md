@@ -1,3 +1,9 @@
+---
+name: adversarial-resilience
+description: >-
+  Adversarial Resilience is the practice of hardening AI agents against deliberate attacks — prompt injection, data exfiltration, sandbox escape, and unauthorized capability escalation.
+---
+
 # Adversarial Resilience
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

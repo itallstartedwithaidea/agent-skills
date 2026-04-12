@@ -1,3 +1,9 @@
+---
+name: landing-page-audit
+description: >-
+  The Landing Page Audit skill performs comprehensive evaluations of post-click experiences, combining technical performance analysis with conversion rate optimization (CRO) assessment.
+---
+
 # Landing Page Audit
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

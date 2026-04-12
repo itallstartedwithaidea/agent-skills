@@ -1,3 +1,9 @@
+---
+name: git-worktrees
+description: >-
+  Git Worktrees enables parallel development by maintaining multiple checked-out branches simultaneously in separate directories.
+---
+
 # Git Worktrees
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

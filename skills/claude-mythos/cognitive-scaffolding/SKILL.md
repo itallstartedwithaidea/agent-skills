@@ -1,3 +1,9 @@
+---
+name: cognitive-scaffolding
+description: >-
+  Cognitive Scaffolding structures an agent's context window using principles from cognitive science — primacy effects, recency bias, chunking, and attention allocation.
+---
+
 # Cognitive Scaffolding
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

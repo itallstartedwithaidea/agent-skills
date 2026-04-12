@@ -1,3 +1,9 @@
+---
+name: agent-instinct-system
+description: >-
+  The Agent Instinct System implements pre-cognitive reflexes — automatic safety checks and validations that fire before every code change, tool call, or output generation.
+---
+
 # Agent Instinct System
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

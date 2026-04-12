@@ -1,3 +1,9 @@
+---
+name: systematic-debugging
+description: >-
+  Systematic Debugging replaces trial-and-error fixes with a disciplined four-phase root cause analysis process.
+---
+
 # Systematic Debugging
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

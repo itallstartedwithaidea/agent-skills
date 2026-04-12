@@ -1,3 +1,9 @@
+---
+name: context-engineering
+description: >-
+  Context Engineering is the discipline of maximizing agent output quality while minimizing token expenditure.
+---
+
 # Context Engineering
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

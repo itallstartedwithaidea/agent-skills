@@ -1,3 +1,9 @@
+---
+name: self-healing-agents
+description: >-
+  Self-Healing Agents are autonomous systems that detect their own failure modes and self-correct without human intervention.
+---
+
 # Self-Healing Agents
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

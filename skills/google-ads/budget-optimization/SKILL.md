@@ -1,3 +1,9 @@
+---
+name: budget-optimization
+description: >-
+  The Budget Optimization skill applies AI-driven forecasting and portfolio theory to allocate advertising budgets across campaigns for maximum return.
+---
+
 # Budget Optimization
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

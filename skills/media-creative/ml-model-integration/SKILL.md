@@ -1,3 +1,9 @@
+---
+name: ml-model-integration
+description: >-
+  ML Model Integration provides workflows for discovering, evaluating, and deploying machine learning models from HuggingFace Hub.
+---
+
 # ML Model Integration
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

@@ -1,3 +1,9 @@
+---
+name: executing-plans
+description: >-
+  Executing Plans takes a written plan and drives it through batch execution with human checkpoints, progress tracking, and rollback capability.
+---
+
 # Executing Plans
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

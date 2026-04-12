@@ -1,3 +1,9 @@
+---
+name: composition-patterns
+description: >-
+  Composition Patterns teaches agents to build flexible, maintainable React components using compound components, state lifting, internal composition, and the elimination of boolean prop proliferation.
+---
+
 # Composition Patterns
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)
