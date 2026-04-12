@@ -136,6 +136,13 @@ def explain_model(model, X_sample: np.ndarray, feature_names: list[str]):
 | Cline | Full | ML pipeline construction |
 | aider | Partial | Code generation only |
 
+## Related Skills
+
+- [Data Analysis](../data-analysis/)
+- [Bioinformatics](../bioinformatics/)
+- [Research Methodology](../research-methodology/)
+- [Workflow Orchestration](../../productivity/workflow-orchestration/)
+
 ## Keywords
 
 `machine-learning` `pytorch` `scikit-learn` `hyperparameter-tuning` `optuna` `shap` `interpretability` `experiment-tracking` `cross-validation`

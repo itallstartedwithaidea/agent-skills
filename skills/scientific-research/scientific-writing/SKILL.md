@@ -127,6 +127,13 @@ class ManuscriptBuilder:
 | Cline | Full | Template-based writing |
 | aider | Partial | Text editing only |
 
+## Related Skills
+
+- [Research Methodology](../research-methodology/)
+- [Data Analysis](../data-analysis/)
+- [AI Chat Studio](../../productivity/ai-chat-studio/)
+- [Assistant Presets](../../productivity/assistant-presets/)
+
 ## Keywords
 
 `scientific-writing` `latex` `imrad` `citations` `bibtex` `manuscript` `abstract` `journal-submission` `peer-review`

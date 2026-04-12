@@ -195,6 +195,13 @@ Cite knowledge pattern IDs (e.g., [bid-001]) when your recommendations are based
 | Citation tracking | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Knowledge updates | ✅ File reload | ✅ Skill reload | ✅ Restart | ✅ Restart |
 
+## Related Skills
+
+- [Token Optimization](../token-optimization/) - Knowledge injection must respect context window budgets; top-K selection minimizes token waste
+- [Entity Memory Management](../entity-memory-management/) - Entity context is assembled alongside knowledge patterns for comprehensive agent context
+- [Continuous Learning](../continuous-learning/) - Auto-generated skills feed back into the knowledge base as new injectable patterns
+- [Google Ads Audit](../../google-ads/google-ads-audit/) - The 1,000-pattern knowledge base powers the audit's pattern-matching engine
+
 ## Keywords
 
 knowledge-base, tf-idf, pattern-matching, domain-expertise, retrieval-augmented-generation, knowledge-injection, confidence-scoring, citation-tracking, gads-knowledge, agent-skills

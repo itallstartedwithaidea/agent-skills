@@ -264,6 +264,13 @@ The platform manages audience signal lifecycle, refreshing Customer Match lists 
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Audience Targeting](../audience-targeting/) - Audience signals are critical inputs that accelerate PMax machine learning
+- [Shopping Ads](../shopping-ads/) - Product feed quality directly impacts PMax Shopping placements
+- [Ad Copy Generation](../ad-copy-generation/) - Asset generation and replacement for PMax headlines, descriptions, and creative
+- [Continuous Learning](../../ai-agent-engineering/continuous-learning/) - Auto-discovers optimization patterns from PMax campaign performance data
+
 ## Keywords
 
 performance max, pmax optimization, asset groups, audience signals, search themes, pmax assets, url expansion, pmax negative keywords, brand exclusions, asset performance, pmax campaign structure, pmax best practices, google pmax, performance max campaigns, pmax cannibalization

@@ -228,6 +228,13 @@ class ResultAggregator:
 | Result aggregation | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Progress monitoring | ✅ Status updates | ✅ Background tasks | ✅ Custom | ✅ Custom |
 
+## Related Skills
+
+- [Long-Horizon Workflows](../long-horizon-workflows/) - Parallel dispatch accelerates individual phases within multi-phase workflows
+- [Multi-Model Routing](../multi-model-routing/) - Optimal model selection for parallel subagents balances cost and quality
+- [Token Optimization](../token-optimization/) - Per-subtask and total budget limits prevent runaway costs in parallel execution
+- [Google Ads Audit](../../google-ads/google-ads-audit/) - Multi-campaign audit analysis is a canonical parallel orchestration use case
+
 ## Keywords
 
 parallel-orchestration, subagents, task-decomposition, result-aggregation, conflict-resolution, concurrency, resource-management, batch-processing, ensemble-reasoning, agent-skills

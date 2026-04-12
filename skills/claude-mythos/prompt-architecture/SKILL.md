@@ -161,6 +161,13 @@ class FewShotSelector:
 | XML section tags | ✅ Preferred | ✅ Supported | ✅ Supported | ✅ Supported |
 | Temperature control | ✅ API param | ⚠️ Model default | ✅ API param | ✅ API param |
 
+## Related Skills
+
+- [Cognitive Scaffolding](../cognitive-scaffolding/) - Attention-zone placement that determines where prompt layers achieve maximum model focus
+- [Context Engineering](../context-engineering/) - Token budget management that constrains prompt layer sizes and triggers compression
+- [Anthropic Tool Mastery](../anthropic-tool-mastery/) - Tool definition design that operates within the prompt architecture's system layer
+- [Verification Loops](../verification-loops/) - Output validation that enforces the schema constraints defined in the prompt architecture
+
 ## Keywords
 
 prompt-architecture, system-prompt, few-shot, chain-of-thought, constrained-generation, output-format, prompt-layering, instruction-hierarchy, temperature-tuning, agent-skills

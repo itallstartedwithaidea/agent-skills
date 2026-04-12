@@ -169,6 +169,12 @@ select sink.getNode(), source, sink, "SQL query depends on $@.", source.getNode(
 | Cline | Full | Security rule authoring |
 | aider | Partial | YAML/QL file editing |
 
+## Related Skills
+
+- [Agent Security Scanning](../agent-security-scanning/) - Broader vulnerability detection covering dependency CVEs and agent-specific threat models
+- [Secret Protection](../secret-protection/) - Credential leak scanning that complements static analysis with secret-specific pattern matching
+- [CI/CD Pipelines](../../infrastructure/ci-cd-pipelines/) - Pipeline configuration where CodeQL and Semgrep scans run as automated quality gates
+
 ## Keywords
 
 `codeql` `semgrep` `static-analysis` `sast` `taint-tracking` `custom-rules` `vulnerability-detection` `ci-cd-security`

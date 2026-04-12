@@ -96,6 +96,12 @@ brainstorming_phases:
 | Cline | Full | Via .clinerules |
 | aider | Partial | Via conventions file |
 
+## Related Skills
+
+- [Writing Plans](../writing-plans/) - Converts brainstorming design briefs into step-by-step implementation plans with verification commands
+- [Executing Plans](../executing-plans/) - Drives the approved plan through batch execution with checkpoints and rollback
+- [Code Review](../code-review/) - Quality gate that validates the implementation matches the brainstormed design brief
+
 ## Keywords
 
 `brainstorming` `socratic-method` `design-refinement` `requirements-gathering` `before-coding` `alternative-exploration` `constraint-discovery` `specification`

@@ -148,6 +148,12 @@ COMMAND_BLOCKLIST = [
 | Cline | Full | Security boundary config |
 | aider | Partial | Process-level only |
 
+## Related Skills
+
+- [Agent Security Scanning](../agent-security-scanning/) - Vulnerability detection that identifies threats the sandbox must contain
+- [Secret Protection](../secret-protection/) - Credential isolation that prevents sandboxed agents from accessing secrets outside their scope
+- [Configuration Management](../../infrastructure/configuration-management/) - Infrastructure-as-code patterns for declaratively managing sandbox configurations across environments
+
 ## Keywords
 
 `sandbox` `container-security` `isolation` `least-privilege` `resource-limits` `seccomp` `docker-hardening` `agent-isolation`

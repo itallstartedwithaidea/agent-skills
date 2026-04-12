@@ -236,6 +236,13 @@ class SkillABTest {
 | A/B testing | ✅ Custom | ✅ Custom | ✅ Custom | ✅ Custom |
 | Auto-deployment | ✅ File write hooks | ✅ Skill directory | ⚠️ Manual | ⚠️ Manual |
 
+## Related Skills
+
+- [Memory Persistence](../memory-persistence/) - Session data persistence provides the raw material for cross-session pattern mining
+- [Knowledge Base Injection](../knowledge-base-injection/) - Mined patterns are deployed as injectable knowledge for future agent sessions
+- [Entity Memory Management](../entity-memory-management/) - Entity extraction feeds the pattern mining pipeline with structured observations
+- [PMax Optimization](../../google-ads/pmax-optimization/) - Auto-discovers optimization patterns from Performance Max campaign data
+
 ## Keywords
 
 continuous-learning, pattern-mining, skill-generation, a-b-testing, feedback-loops, auto-improvement, session-analysis, knowledge-derivation, skill-versioning, agent-skills

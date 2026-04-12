@@ -144,6 +144,13 @@ class WorkflowEngine {
 | Cline | Full | Pipeline orchestration |
 | aider | Partial | Code-level workflow support |
 
+## Related Skills
+
+- [Batch Processing](../batch-processing/)
+- [AI Chat Studio](../ai-chat-studio/)
+- [Parallel Agent Orchestration](../../ai-agent-engineering/parallel-agent-orchestration/)
+- [MCP Server Creation](../../ai-agent-engineering/mcp-server-creation/)
+
 ## Keywords
 
 `workflow` `orchestration` `mcp` `dag` `parallel-execution` `conditional-routing` `human-in-the-loop` `automation`

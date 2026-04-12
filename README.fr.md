@@ -1,174 +1,218 @@
-# Agent Skills™ — La bibliothèque de compétences IA de référence
+<p align="center">
+  <img src="assets/images/hero-banner.png" alt="Agent Skills — 73 compétences prêtes pour la production pour la gestion Google Ads par IA" width="800">
+</p>
 
-![Skills](https://img.shields.io/badge/skills-73%2B-blue) ![Languages](https://img.shields.io/badge/languages-7-green) ![License](https://img.shields.io/badge/license-MIT-brightgreen) ![Platform](https://img.shields.io/badge/platform-Claude%20Code%20%7C%20Cursor%20%7C%20Codex%20%7C%20Gemini-purple)
+<p align="center">
+  <strong>73 compétences prêtes pour la production pour la gestion Google Ads par IA.</strong><br>
+  Conçu pour <a href="https://googleadsagent.ai/tools/auditor/app">Buddy Agent</a> sur <a href="https://googleadsagent.ai">googleadsagent.ai</a>. Compatible avec Claude Code, Cursor, Codex et Gemini.
+</p>
 
-[English](README.md) | **Français** | [Español](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
-
-![Buddy™ Agent](assets/screenshots/buddy-agent.png)
-
----
-
-## Qu'est-ce qu'Agent Skills™ ?
-
-**Agent Skills™** est la bibliothèque de compétences open source de référence pour la gestion automatisée de Google Ads par intelligence artificielle, spécialement conçue pour la plateforme [googleadsagent.ai™](https://googleadsagent.ai). Ce dépôt fournit **plus de 73 compétences prêtes pour la production, réparties en 10 catégories**, permettant aux agents IA de gérer, optimiser et développer de manière autonome les campagnes Google Ads avec une précision de niveau expert. Que vous construisiez des flux de travail IA personnalisés dans Cursor, Claude Code, Codex ou Gemini, Agent Skills™ offre à votre agent les connaissances structurées et les modèles exécutables nécessaires pour surpasser la gestion manuelle de campagnes.
-
-Agent Skills™ a été synthétisé à partir de l'intelligence collective de **plus de 15 dépôts open source de premier plan** — dont obra/superpowers (146k étoiles), affaan-m/everything-claude-code (150k étoiles), K-Dense-AI/scientific-agent-skills (18k étoiles), vercel-labs/agent-skills (24,8k étoiles), et bien d'autres — en distillant les meilleures pratiques en architecture d'agents, appels d'outils et automatisation IA spécialisée dans une bibliothèque unique, bien organisée et multilingue. Chaque compétence suit un format standardisé `SKILL.md`, est rigoureusement validée et est conçue pour un déploiement plug-and-play instantané avec Buddy™ Agent, l'orchestrateur intelligent au cœur de googleadsagent.ai™.
+[English](README.md) | [Francais](README.fr.md) | [Espanol](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
 
 ---
 
-## Architecture
+## À quoi ressemble une compétence ?
 
-La plateforme googleadsagent.ai™ est propulsée par Buddy™ Agent, un orchestrateur IA multi-modèle qui exploite Agent Skills™ pour offrir une gestion autonome de Google Ads à grande échelle.
+Chaque compétence est un simple fichier `SKILL.md` dans un répertoire nommé. Voici une compétence réelle de ce dépôt — **Keyword Research** (`skills/google-ads/keyword-research/SKILL.md`) :
 
-```mermaid
-graph TB
-    User["👤 Utilisateur / Annonceur"] --> Buddy["🤖 Buddy™ Agent"]
+```markdown
+# Keyword Research
 
-    Buddy --> Router["🔀 Routeur Multi-Modèle"]
-    Router --> Claude["Claude (Anthropic)"]
-    Router --> GPT["GPT (OpenAI)"]
-    Router --> Gemini["Gemini (Google)"]
+## Description
 
-    Buddy --> Tools["🛠️ Outils"]
-    Tools --> GAds["API Google Ads"]
-    Tools --> WebSearch["Recherche Web"]
-    Tools --> PageScanner["Analyseur de Pages"]
+Systematic keyword discovery, expansion, and optimization for Google Ads.
+Builds keyword universes from seed keywords through semantic expansion,
+competitor mining, search term analysis, and intent-based grouping.
+Assigns match types based on conversion probability and manages negative
+keyword lists at account, campaign, and ad group levels.
 
-    Buddy --> CF["☁️ Cloudflare Workers"]
-    CF --> KV["KV Store"]
-    CF --> R2["R2 Storage"]
-    CF --> D1["D1 Database"]
-    CF --> Vectorize["Vectorize"]
+## Use When
 
-    Buddy --> Skills["📚 Agent Skills™"]
-    Skills --> Cat1["Gestion de Campagnes"]
-    Skills --> Cat2["Optimisation des Mots-Clés"]
-    Skills --> Cat3["Textes Publicitaires & Créatifs"]
-    Skills --> Cat4["Stratégies d'Enchères"]
-    Skills --> Cat5["Analyses & Rapports"]
+- User asks for "keyword research" or "keyword ideas"
+- User wants to "expand keywords" or "find new keywords"
+- User mentions "negative keywords" or "search term mining"
+- User asks about "match types" (broad, phrase, exact)
+- User wants to "reduce wasted spend" on irrelevant queries
 
-    style Buddy fill:#4A90D9,stroke:#333,color:#fff
-    style Router fill:#7B68EE,stroke:#333,color:#fff
-    style Skills fill:#2ECC71,stroke:#333,color:#fff
-    style CF fill:#F39C12,stroke:#333,color:#fff
+## Implementation
+
+​```javascript
+function assignMatchType(keyword) {
+  if (keyword.conversionRate > 0.05 && keyword.volume < 1000)
+    return 'EXACT';
+  if (keyword.intent === 'transactional' && keyword.wordCount >= 3)
+    return 'PHRASE';
+  if (keyword.volume > 5000 && keyword.competitorPresence)
+    return 'BROAD';
+  return 'PHRASE';
+}
+​```
+
+## Platform Compatibility
+
+| Platform    | Supported |
+|-------------|-----------|
+| Cursor      | ✅        |
+| Claude Code | ✅        |
+| Codex       | ✅        |
+| Gemini CLI  | ✅        |
+
+## Related Skills
+
+- [Ad Copy Generation](../google-ads/ad-copy-generation/)
+- [Competitor Analysis](../google-ads/competitor-analysis/)
+- [Quality Score Optimization](../google-ads/quality-score-optimization/)
 ```
 
-![Architecture du Système](assets/images/buddy-agent-architecture.png)
+Voilà le format complet. Chaque compétence suit cette structure :
+
+<p align="center">
+  <img src="assets/images/skill-anatomy.png" alt="Anatomie d'un fichier SKILL.md" width="800">
+</p>
+
+Consultez la [spécification complète du format](docs/skill-format.md) pour plus de détails.
 
 ---
 
-## Catalogue des Compétences
+## Démarrage rapide
 
-Agent Skills™ organise **plus de 73 compétences** en **10 catégories**, chacune ciblant un domaine essentiel de la gestion Google Ads et des opérations d'agents IA.
-
-![Taxonomie des Compétences](assets/images/skills-taxonomy.png)
-
-| Catégorie | Compétences | Description |
-|-----------|-------------|-------------|
-| [Gestion de Campagnes](skills/campaign-management/) | 12 | Créer, mettre en pause, optimiser et structurer les campagnes Search, Display, PMax et Vidéo |
-| [Optimisation des Mots-Clés](skills/keyword-optimization/) | 9 | Recherche de mots-clés, extraction de mots-clés négatifs, stratégie de types de correspondance et analyse des termes de recherche |
-| [Textes Publicitaires & Créatifs](skills/ad-copy-creative/) | 8 | Génération de RSA, optimisation des titres, rédaction de descriptions et cadres de tests A/B |
-| [Stratégies d'Enchères](skills/bidding-strategies/) | 7 | Configuration Smart Bidding, ajustement tROAS/tCPA, stratégies de portefeuille et ajustements d'enchères |
-| [Analyses & Rapports](skills/analytics-reporting/) | 8 | Tableaux de bord personnalisés, alertes de performance, modélisation d'attribution et insights cross-canal |
-| [Ciblage d'Audience](skills/audience-targeting/) | 6 | Listes de remarketing, Customer Match, audiences similaires et ciblage démographique |
-| [Gestion du Budget](skills/budget-management/) | 5 | Allocation budgétaire, rythme de dépense, prévisions et optimisation des budgets partagés |
-| [Page d'Atterrissage & CRO](skills/landing-page-cro/) | 6 | Analyse de pages d'atterrissage, optimisation du taux de conversion, audit de vitesse de page |
-| [Santé du Compte](skills/account-health/) | 7 | Amélioration du Quality Score, conformité aux politiques, audits de structure de compte |
-| [Infrastructure Agent](skills/agent-infrastructure/) | 5 | Configuration de serveur MCP, modèles d'appels d'outils, routage multi-modèle, gestion de la mémoire |
-
----
-
-## Démarrage Rapide
-
-### Cursor
-
-```bash
-/add-plugin agent-skills
-```
-
-### Claude Code
-
-```bash
-/plugin install agent-skills
-```
-
-### npm
-
-```bash
-npx skills add itallstartedwithaidea/agent-skills
-```
-
-### Installation Manuelle
+### Cloner et utiliser directement
 
 ```bash
 git clone https://github.com/itallstartedwithaidea/agent-skills.git
 cd agent-skills
 ```
 
-Après l'installation, les compétences sont disponibles dans le contexte de votre agent. Chaque compétence est un fichier `SKILL.md` autonome que votre agent IA charge à la demande.
+### Valider toutes les compétences
+
+```bash
+npm run validate
+```
+
+### Compter les compétences par catégorie
+
+```bash
+npm run count
+```
+
+Après le clonage, dirigez votre agent IA vers le répertoire `skills/`. Chaque `SKILL.md` est autonome et chargeable à la demande.
 
 ---
 
-## La Plateforme googleadsagent.ai™
+## Catalogue des compétences
 
-[googleadsagent.ai™](https://googleadsagent.ai) est la plateforme de gestion Google Ads native IA, conçue pour les agences, les marques e-commerce et les spécialistes du marketing de performance qui exigent une optimisation de campagnes autonome et de niveau expert.
+73 compétences réparties en 10 catégories :
 
-### Buddy™ Agent
+| Catégorie | Compétences | Ce qu'elle couvre |
+|-----------|-------------|-------------------|
+| [Google Ads](skills/google-ads/) | 12 | Audits, mots-clés, textes publicitaires, enchères, PMax, Shopping, audiences, conversions, budgets, Quality Score, remarketing, analyse concurrentielle |
+| [AI Agent Engineering](skills/ai-agent-engineering/) | 10 | Injection de base de connaissances, mémoire d'entités, routage multi-modèles, intelligence proactive, serveurs MCP, orchestration parallèle |
+| [Claude Mythos](skills/claude-mythos/) | 10 | Architecture de prompts, ingénierie de contexte, maîtrise des outils, agents auto-réparateurs, boucles de vérification, échafaudage cognitif |
+| [Software Development](skills/software-dev/) | 8 | Revue de code, TDD, débogage systématique, git worktrees, brainstorming, développement piloté par sous-agents |
+| [Scientific Research](skills/scientific-research/) | 8 | Analyse de données, apprentissage automatique, bio-informatique, chimio-informatique, analyse géospatiale, rédaction scientifique |
+| [Web Frontend](skills/web-frontend/) | 6 | Bonnes pratiques React, React Native, transitions de vues, déploiement en périphérie, patterns de composition, design web |
+| [Productivity](skills/productivity/) | 6 | Orchestration de flux de travail, traitement par lots, bases de connaissances RAG, studio de chat IA, génération low-code |
+| [Infrastructure](skills/infrastructure/) | 6 | Cloudflare Workers, pipelines CI/CD, rendu en périphérie, observabilité, découverte de services, gestion de configuration |
+| [Security](skills/security/) | 4 | Scan de sécurité des agents, CodeQL/Semgrep, durcissement de sandbox, protection des secrets |
+| [Media Creative](skills/media-creative/) | 3 | Génération d'assets web, vidéo programmatique, intégration de modèles ML |
 
-**Buddy™ Agent** est l'orchestrateur intelligent au cœur de googleadsagent.ai™. Buddy™ Agent combine :
+---
 
-- **Base de Connaissances de 1 000 Modèles** — Sélectionnée à partir de millions de comptes Google Ads, encodant les meilleures pratiques pour chaque type de campagne, secteur vertical et scénario d'optimisation
-- **Routage Multi-Modèle** — Sélectionne dynamiquement le LLM optimal (Claude, GPT, Gemini) pour chaque tâche en fonction du coût, de la latence et des capacités requises
-- **Mémoire d'Entités** — Mémoire persistante et structurée qui suit l'historique du compte, les décisions d'optimisation et les tendances de performance entre les sessions
-- **Appels d'Outils** — Intégration native avec l'API Google Ads, la recherche web, les analyseurs de pages et Cloudflare Workers pour la récupération de données et l'exécution d'actions en temps réel
-- **Intégration Agent Skills™** — Charge les compétences de ce dépôt à la demande, donnant à Buddy™ Agent une expertise approfondie dans les 10 catégories
+## Format SKILL.md
+
+Chaque compétence nécessite les sections suivantes :
+
+| Section | Objectif |
+|---------|----------|
+| `# Title` | Nom lisible de la compétence |
+| `## Description` | Explication en 2 à 5 phrases (indexée pour la recherche) |
+| `## Use When` | Liste à puces des scénarios déclencheurs |
+| `## Implementation` | Extraits de code, algorithmes, procédures |
+| `## Platform Compatibility` | Tableau de compatibilité Cursor / Claude Code / Codex / Gemini |
+| `## Related Skills` | Liens vers les compétences complémentaires |
+
+Optionnel : `## Prerequisites`, `## Configuration`, `## Best Practices`, `## Limitations`, `## Keywords`
+
+Spécification complète : [docs/skill-format.md](docs/skill-format.md)
+
+---
+
+## Architecture
+
+Buddy Agent charge les compétences à la demande en fonction de la correspondance avec l'intention de l'utilisateur :
+
+```mermaid
+graph TB
+    User["User / Advertiser"] --> Buddy["Buddy Agent"]
+
+    Buddy --> Router["Multi-Model Router"]
+    Router --> Claude["Claude"]
+    Router --> GPT["GPT"]
+    Router --> Gemini["Gemini"]
+
+    Buddy --> Tools["Tool Calling"]
+    Tools --> GAds["Google Ads API v22"]
+    Tools --> WebSearch["Web Search"]
+    Tools --> PageScanner["Page Scanner"]
+
+    Buddy --> Skills["Agent Skills (this repo)"]
+    Skills --> GoogleAds["Google Ads (12)"]
+    Skills --> AgentEng["AI Agent Engineering (10)"]
+    Skills --> ClaudeMythos["Claude Mythos (10)"]
+    Skills --> SoftwareDev["Software Dev (8)"]
+    Skills --> OtherCats["+ 6 more categories"]
+
+    Buddy --> CF["Cloudflare Workers"]
+    CF --> KV["KV Store"]
+    CF --> DO["Durable Objects"]
+```
+
+Documentation complète de l'architecture : [docs/architecture.md](docs/architecture.md)
+
+---
+
+## La plateforme
+
+[googleadsagent.ai](https://googleadsagent.ai) est la plateforme de gestion Google Ads nativement IA. **Buddy Agent** est l'orchestrateur intelligent à son cœur :
+
+- **Base de connaissances de 1 000 patterns** — Patterns experts Google Ads avec correspondance TF-IDF, injectés dans chaque appel IA
+- **Routage multi-modèles** — Claude, GPT et Gemini avec appel d'outils sur les trois fournisseurs
+- **Mémoire d'entités** — Mémoire persistante suivant les campagnes, points de friction, métriques et décisions entre les sessions via Cloudflare KV
+- **Intelligence proactive** — L'IA recherche autonomement sur le web et re-récupère les données Google Ads en cours d'analyse
+- **Intégration Agent Skills** — Charge les compétences de ce dépôt à la demande
 
 ---
 
 ## Contribuer
 
-Nous accueillons les contributions de la communauté ! Que vous souhaitiez ajouter une nouvelle compétence, améliorer une compétence existante, corriger un bug ou traduire du contenu dans une nouvelle langue, votre aide rend Agent Skills™ meilleur pour tous.
+Les contributions sont les bienvenues. Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour les directives.
 
-Veuillez lire notre [Guide de Contribution](CONTRIBUTING.md) avant de soumettre une pull request.
+Pour ajouter une nouvelle compétence :
+
+1. Créez un répertoire sous la catégorie appropriée dans `skills/`
+2. Ajoutez un `SKILL.md` en suivant la [spécification du format](docs/skill-format.md)
+3. Exécutez `npm run validate` pour vérifier qu'il passe les tests
+4. Soumettez une pull request
 
 ---
 
-## Crédits & Attribution
+## Remerciements
 
-Agent Skills™ a été construit sur les épaules de géants. Nous remercions chaleureusement les dépôts open source suivants dont le travail a informé et inspiré cette bibliothèque :
+Agent Skills s'est inspiré de ces projets open source :
 
-| Dépôt | Étoiles | Ce que nous avons synthétisé |
-|-------|---------|------------------------------|
-| [obra/superpowers](https://github.com/obra/superpowers) | 146k | Modèles d'architecture d'agents, conception de flux de travail autonomes |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 150k | Meilleures pratiques Claude Code, modèles d'ingénierie de prompts |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 24,8k | Spécification du format de compétences, architecture de plugins |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 18k | Méthodologie scientifique pour la validation et le test des compétences |
-| [agentskills/agentskills](https://github.com/agentskills/agentskills) | — | Taxonomie et cadre de catégorisation des compétences |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | — | Modèles de compétences en performance web et optimisation |
-| [remotion-dev/skills](https://github.com/remotion-dev/skills) | — | Compétences en génération de médias et automatisation créative |
-| [huggingface/skills](https://github.com/huggingface/skills) | — | Intégration de modèles ML et modèles de compétences d'inférence |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | — | Modèles d'orchestration de flux multi-agents |
-| [jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot) | — | Automatisation low-code et modèles de développement rapide |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | — | Interface de chat multi-modèle et conception d'interaction agent |
-| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | — | Outils de l'écosystème Claude Code et modèles d'intégration |
-| [alibaba/nacos](https://github.com/alibaba/nacos) | — | Modèles de découverte de services et gestion de configuration |
-| [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | — | Composition et chaînage avancés de compétences agent |
-| [vercel-labs/skills](https://github.com/vercel-labs/skills) | — | Packaging et distribution de compétences prêtes au déploiement |
+| Dépôt | Étoiles | Ce que nous avons appris |
+|-------|---------|--------------------------|
+| [obra/superpowers](https://github.com/obra/superpowers) | 148k | Architecture d'agents, conception de flux de travail autonomes |
+| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 152k | Bonnes pratiques Claude Code, ingénierie de prompts |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 25k | Spécification du format des compétences, architecture de plugins |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 18k | Méthodologie scientifique pour la validation des compétences |
 
 ---
 
 ## Licence
 
-Ce projet est sous licence [MIT](LICENSE).
+Licence MIT. Voir [LICENSE](LICENSE).
 
 ---
 
-<p align="center">
-  Construit avec ❤️ par <a href="https://github.com/itallstartedwithaidea">itallstartedwithaidea</a> | Propulsé par <a href="https://googleadsagent.ai">googleadsagent.ai™</a>
-</p>
-
----
-
-### Mots-Clés
-
-agent skills, google ads ia, agent ia, automatisation google ads, buddy agent, googleadsagent, compétences claude code, compétences cursor, compétences codex, compétences gemini, serveur mcp, cloudflare workers, api google ads, gestion de campagnes ia, optimisation de mots-clés ia, génération de textes publicitaires, stratégie d'enchères ia, automatisation ppc, automatisation sem, publicité numérique ia, agent ia multi-modèle, orchestration d'agents, appels d'outils, plateforme de gestion google ads
+Créé par [John Williams](https://itallstartedwithaidea.com) | Propulsé par [googleadsagent.ai](https://googleadsagent.ai)

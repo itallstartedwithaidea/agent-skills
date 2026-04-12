@@ -151,6 +151,13 @@ npx remotion render MainVideo --props='{"title":"Q2","metrics":[...]}'
 | Cline | Full | Video pipeline setup |
 | aider | Partial | Code generation only |
 
+## Related Skills
+
+- [Web Asset Generation](../web-asset-generation/)
+- [ML Model Integration](../ml-model-integration/)
+- [View Transitions](../../web-frontend/view-transitions/)
+- [Batch Processing](../../productivity/batch-processing/)
+
 ## Keywords
 
 `programmatic-video` `remotion` `react-video` `animation` `data-driven-video` `batch-rendering` `composition` `spring-animation`

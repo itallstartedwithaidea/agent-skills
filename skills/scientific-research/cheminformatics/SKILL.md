@@ -119,6 +119,13 @@ def admet_flags(props: dict) -> list[str]:
 | Cline | Full | Cheminformatics workflows |
 | aider | Partial | Code generation only |
 
+## Related Skills
+
+- [Bioinformatics](../bioinformatics/)
+- [Database Lookup](../database-lookup/)
+- [Machine Learning](../machine-learning/)
+- [Batch Processing](../../productivity/batch-processing/)
+
 ## Keywords
 
 `cheminformatics` `rdkit` `molecular-properties` `virtual-screening` `admet` `lipinski` `drug-discovery` `molecular-similarity`

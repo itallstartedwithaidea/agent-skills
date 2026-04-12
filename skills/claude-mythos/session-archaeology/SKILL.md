@@ -190,6 +190,12 @@ class MistakeTaxonomy:
 | Pattern extraction | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Skill derivation | ✅ SKILL.md | ✅ SKILL.md | ✅ Instructions | ✅ System prompts |
 
+## Related Skills
+
+- [Verification Loops](../verification-loops/) - Grader outputs that feed into session archaeology as structured evaluation data for pattern mining
+- [Cognitive Scaffolding](../cognitive-scaffolding/) - Attention patterns validated through archaeological analysis of which scaffold zones produce best results
+- [Context Engineering](../context-engineering/) - Token usage patterns mined from session transcripts to optimize context budget allocation
+
 ## Keywords
 
 session-archaeology, pattern-mining, mistake-taxonomy, session-analysis, skill-derivation, cross-session-analysis, agent-improvement, transcript-parsing, failure-analysis, agent-skills

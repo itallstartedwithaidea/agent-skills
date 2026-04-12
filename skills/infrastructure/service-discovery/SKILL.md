@@ -129,6 +129,13 @@ function loadBalance(instances: ServiceInstance[]): ServiceInstance {
 | Cline | Full | Service scaffolding |
 | aider | Partial | Code-level support only |
 
+## Related Skills
+
+- [Cloudflare Workers](../cloudflare-workers/)
+- [Configuration Management](../configuration-management/)
+- [Observability](../observability/)
+- [Sandbox Hardening](../../security/sandbox-hardening/)
+
 ## Keywords
 
 `service-discovery` `nacos` `health-check` `load-balancing` `microservices` `registry` `cloud-native` `dynamic-routing`

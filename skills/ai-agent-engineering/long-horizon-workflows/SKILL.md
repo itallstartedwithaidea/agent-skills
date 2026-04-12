@@ -228,6 +228,13 @@ class ProgressTracker:
 | Progress tracking | ✅ Status updates | ✅ Status bar | ✅ Stdout | ✅ Stdout |
 | Timeout management | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 
+## Related Skills
+
+- [Parallel Agent Orchestration](../parallel-agent-orchestration/) - Phases within long-horizon workflows can dispatch parallel subagents for acceleration
+- [Memory Persistence](../memory-persistence/) - Checkpoint data persistence enables workflow resume after interruptions
+- [MCP Server Creation](../mcp-server-creation/) - MCP tools provide standardized access to external APIs during workflow phases
+- [Google Ads Audit](../../google-ads/google-ads-audit/) - Full account audits across 20 categories are a canonical long-horizon workflow
+
 ## Keywords
 
 long-horizon-workflows, multi-phase-pipelines, checkpointing, human-in-the-loop, progress-tracking, task-decomposition, error-recovery, deerflow, autonomous-execution, agent-skills

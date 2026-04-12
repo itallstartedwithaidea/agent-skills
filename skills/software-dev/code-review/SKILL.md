@@ -105,6 +105,12 @@ review_dimensions:
 | Cline | Full | Diff-based review |
 | aider | Partial | Limited to file-level review |
 
+## Related Skills
+
+- [Test-Driven Development](../test-driven-development/) - RED-GREEN-REFACTOR discipline that ensures reviewed code has corresponding test coverage
+- [Systematic Debugging](../systematic-debugging/) - Root cause analysis methodology applied when code review uncovers defects
+- [Agent Security Scanning](../../security/agent-security-scanning/) - Automated vulnerability detection that complements the security dimension of code review
+
 ## Keywords
 
 `code-review` `quality-gate` `pre-merge-checklist` `severity-classification` `pull-request-review` `security-review` `performance-review` `review-document`

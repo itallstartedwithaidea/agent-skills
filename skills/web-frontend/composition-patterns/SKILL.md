@@ -130,6 +130,13 @@ Tabs.Panel = TabPanel;
 | Cline | Full | Pattern-based generation |
 | aider | Partial | Limited compositional awareness |
 
+## Related Skills
+
+- [React Best Practices](../react-best-practices/)
+- [View Transitions](../view-transitions/)
+- [Web Design Guidelines](../web-design-guidelines/)
+- [Edge Rendering](../../infrastructure/edge-rendering/)
+
 ## Keywords
 
 `composition` `compound-components` `react-patterns` `state-lifting` `boolean-props` `render-delegation` `design-system` `composable-api`

@@ -112,6 +112,13 @@ def publication_figure(df: pd.DataFrame, x: str, y: str, output: str):
 | Cline | Full | Data analysis workflows |
 | aider | Partial | Code generation only |
 
+## Related Skills
+
+- [Machine Learning](../machine-learning/)
+- [Scientific Writing](../scientific-writing/)
+- [Research Methodology](../research-methodology/)
+- [Knowledge Base RAG](../../productivity/knowledge-base-rag/)
+
 ## Keywords
 
 `data-analysis` `statistics` `pandas` `scipy` `visualization` `matplotlib` `seaborn` `hypothesis-testing` `publication-figures`

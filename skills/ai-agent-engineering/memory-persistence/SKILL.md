@@ -191,6 +191,13 @@ async def build_memory_context(user_id: str, current_task: str) -> str:
 | Entity extraction | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Auto-save triggers | ✅ Hooks | ✅ Events | ⚠️ Manual | ⚠️ Manual |
 
+## Related Skills
+
+- [Entity Memory Management](../entity-memory-management/) - Granular entity-level memory built on top of the persistence layer
+- [Continuous Learning](../continuous-learning/) - Persisted session data enables cross-session pattern mining and skill derivation
+- [Token Optimization](../token-optimization/) - Memory injection must respect context window budgets to avoid diluting agent attention
+- [Quality Score Optimization](../../google-ads/quality-score-optimization/) - Persistent QS tracking across sessions enables historical trend analysis
+
 ## Keywords
 
 memory-persistence, session-memory, entity-extraction, cloudflare-kv, session-summarization, memory-retrieval, cross-session-context, memory-indexing, knowledge-persistence, agent-skills

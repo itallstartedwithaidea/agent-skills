@@ -135,6 +135,13 @@ function handleNavigation(direction: "forward" | "back") {
 | Cline | Full | React component generation |
 | aider | Partial | Limited CSS context |
 
+## Related Skills
+
+- [Composition Patterns](../composition-patterns/)
+- [React Best Practices](../react-best-practices/)
+- [Web Design Guidelines](../web-design-guidelines/)
+- [Edge Rendering](../../infrastructure/edge-rendering/)
+
 ## Keywords
 
 `view-transitions` `react` `shared-elements` `page-transitions` `animation` `next-js` `css-pseudo-elements` `cross-fade` `route-animation`

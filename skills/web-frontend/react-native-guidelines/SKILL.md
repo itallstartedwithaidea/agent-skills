@@ -132,6 +132,13 @@ function Screen({ children }: PropsWithChildren) {
 | Cline | Full | React Native aware |
 | aider | Partial | Limited mobile context |
 
+## Related Skills
+
+- [React Best Practices](../react-best-practices/)
+- [Composition Patterns](../composition-patterns/)
+- [Web Design Guidelines](../web-design-guidelines/)
+- [CI/CD Pipelines](../../infrastructure/ci-cd-pipelines/)
+
 ## Keywords
 
 `react-native` `mobile` `performance` `flatlist` `native-driver` `animation` `safe-area` `cross-platform` `ios` `android`

@@ -159,6 +159,13 @@ class AgentSecurityScanner:
 | Cline | Full | Security-aware review |
 | aider | Partial | Code-level scanning |
 
+## Related Skills
+
+- [CodeQL & Semgrep](../codeql-semgrep/) - Deep static analysis with data flow tracking that catches vulnerabilities regex-based scanning misses
+- [Secret Protection](../secret-protection/) - Credential leak prevention across pre-commit, CI/CD, and runtime layers
+- [Sandbox Hardening](../sandbox-hardening/) - Execution isolation that limits the blast radius of any vulnerability that escapes scanning
+- [Code Review](../../software-dev/code-review/) - Structured quality gate that applies security review as one of its core evaluation dimensions
+
 ## Keywords
 
 `security-scanning` `owasp` `cve` `vulnerability-detection` `prompt-injection` `agent-security` `static-analysis` `dependency-audit`

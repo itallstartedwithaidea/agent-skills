@@ -126,6 +126,12 @@ function generateTable(schema: TableSchema): string {
 | Cline | Full | Low-code component creation |
 | aider | Partial | Code generation only |
 
+## Related Skills
+
+- [Workflow Orchestration](../workflow-orchestration/)
+- [Batch Processing](../batch-processing/)
+- [MCP Server Creation](../../ai-agent-engineering/mcp-server-creation/)
+
 ## Keywords
 
 `low-code` `form-generation` `table-generation` `schema-driven` `admin-panel` `crud` `zero-code` `rapid-development`

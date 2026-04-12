@@ -135,6 +135,13 @@ jobs:
 | Cline | Full | Terminal integration |
 | aider | Partial | Config file generation only |
 
+## Related Skills
+
+- [React Best Practices](../react-best-practices/)
+- [Web Design Guidelines](../web-design-guidelines/)
+- [CI/CD Pipelines](../../infrastructure/ci-cd-pipelines/)
+- [Cloudflare Workers](../../infrastructure/cloudflare-workers/)
+
 ## Keywords
 
 `edge-deployment` `vercel` `cloudflare-pages` `ci-cd` `framework-detection` `static-deployment` `ssr-deployment` `preview-deployment`

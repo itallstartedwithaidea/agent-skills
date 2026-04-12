@@ -113,6 +113,12 @@ class WorktreeManager:
 | Cline | Full | Terminal git commands |
 | aider | Full | Works from any worktree directory |
 
+## Related Skills
+
+- [Subagent-Driven Development](../subagent-driven-development/) - Parallel task dispatch that relies on worktrees for filesystem isolation between agents
+- [Executing Plans](../executing-plans/) - Plan execution with rollback that uses worktrees for clean verification baselines
+- [Code Review](../code-review/) - Pre-merge quality gate applied to each worktree branch before merging
+
 ## Keywords
 
 `git-worktrees` `parallel-development` `isolated-workspace` `clean-baseline` `concurrent-branches` `subagent-isolation` `best-of-n` `branch-management`

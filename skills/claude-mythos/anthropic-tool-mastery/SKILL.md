@@ -189,6 +189,12 @@ class ToolCache:
 | Extended thinking | ✅ Native | ⚠️ Model-dependent | ❌ Not available | ⚠️ Limited |
 | Tool result caching | ✅ Custom | ✅ Custom | ✅ Custom | ✅ Custom |
 
+## Related Skills
+
+- [Prompt Architecture](../prompt-architecture/) - Structural prompt design that optimizes tool selection accuracy and parameter construction
+- [Context Engineering](../context-engineering/) - Token budget management that ensures tool results fit within context limits
+- [Multi-Harness Portability](../multi-harness-portability/) - Cross-platform tool abstraction for writing tool integrations that work across all harnesses
+
 ## Keywords
 
 tool-use, parallel-tool-calling, streaming, extended-thinking, tool-definitions, tool-orchestration, result-composition, error-recovery, tool-caching, agent-skills

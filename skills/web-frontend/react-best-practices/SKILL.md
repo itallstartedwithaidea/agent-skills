@@ -116,6 +116,13 @@ const contextValue = useMemo(
 | Cline | Full | Rule-based review |
 | aider | Partial | Manual rule application |
 
+## Related Skills
+
+- [Composition Patterns](../composition-patterns/)
+- [View Transitions](../view-transitions/)
+- [Web Design Guidelines](../web-design-guidelines/)
+- [Edge Rendering](../../infrastructure/edge-rendering/)
+
 ## Keywords
 
 `react` `performance` `best-practices` `bundle-size` `waterfall-elimination` `server-components` `re-render-optimization` `core-web-vitals`

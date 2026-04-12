@@ -156,6 +156,13 @@ Question: {question}"""
 | Cline | Full | Vector store integration |
 | aider | Partial | Code-level support |
 
+## Related Skills
+
+- [AI Chat Studio](../ai-chat-studio/)
+- [Workflow Orchestration](../workflow-orchestration/)
+- [Knowledge Base Injection](../../ai-agent-engineering/knowledge-base-injection/)
+- [Entity Memory Management](../../ai-agent-engineering/entity-memory-management/)
+
 ## Keywords
 
 `rag` `retrieval-augmented-generation` `vector-search` `embeddings` `chunking` `knowledge-base` `semantic-search` `document-qa`

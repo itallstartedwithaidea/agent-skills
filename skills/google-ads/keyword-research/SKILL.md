@@ -204,6 +204,13 @@ The skill cross-references with the Competitor Analysis skill to identify keywor
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Ad Copy Generation](../ad-copy-generation/) - New keywords require corresponding ad copy with keyword-ad alignment
+- [Competitor Analysis](../competitor-analysis/) - Competitor keyword gaps reveal expansion opportunities
+- [Quality Score Optimization](../quality-score-optimization/) - Keyword Quality Scores guide match type and ad group restructuring decisions
+- [Knowledge Base Injection](../../ai-agent-engineering/knowledge-base-injection/) - Domain knowledge patterns power automated keyword intent classification
+
 ## Keywords
 
 keyword research, keyword expansion, negative keywords, match type optimization, broad match, phrase match, exact match, search term mining, keyword grouping, ad group structure, long-tail keywords, keyword intent, keyword strategy, google ads keywords, ppc keywords

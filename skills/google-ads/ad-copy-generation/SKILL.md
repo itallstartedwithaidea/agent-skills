@@ -189,6 +189,13 @@ The skill integrates with Buddy™'s approval workflow, presenting generated var
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Quality Score Optimization](../quality-score-optimization/) - Ad copy directly impacts the Expected CTR and Ad Relevance components of Quality Score
+- [Keyword Research](../keyword-research/) - Keyword-ad alignment is critical for ad relevance; keyword themes drive ad group copy strategy
+- [Landing Page Audit](../landing-page-audit/) - Message match between ad copy and landing pages affects both Quality Score and conversion rates
+- [Competitor Analysis](../competitor-analysis/) - Competitor messaging gaps inform differentiation strategy for ad copy
+
 ## Keywords
 
 ad copy generation, responsive search ads, RSA optimization, headline generation, description writing, ad strength, A/B testing ads, dynamic keyword insertion, DKI, pin strategy, ad copy testing, google ads copywriting, ctr optimization, ad fatigue, ad variant testing

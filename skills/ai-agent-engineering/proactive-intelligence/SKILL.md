@@ -238,6 +238,13 @@ Analyze the campaign data and provide recommendations. If proactive research is 
 | Search budget limits | ✅ Custom | ✅ Custom | ✅ Custom | ✅ Custom |
 | Citation tracking | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 
+## Related Skills
+
+- [Knowledge Base Injection](../knowledge-base-injection/) - Proactive search fills knowledge gaps that the static knowledge base cannot cover
+- [Continuous Learning](../continuous-learning/) - Successful proactive search patterns are captured and codified into reusable triggers
+- [Competitor Analysis](../../google-ads/competitor-analysis/) - Real-time competitive intelligence is a primary proactive search trigger
+- [Conversion Tracking](../../google-ads/conversion-tracking/) - Data anomaly detection triggers proactive investigation of tracking issues
+
 ## Keywords
 
 proactive-intelligence, autonomous-search, trigger-conditions, data-freshness, web-search, result-scoring, knowledge-gaps, anomaly-detection, competitive-intelligence, agent-skills

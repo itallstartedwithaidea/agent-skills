@@ -258,6 +258,13 @@ For competitive pricing, Buddy™ monitors price benchmark data and alerts users
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [PMax Optimization](../pmax-optimization/) - Product feed quality directly impacts Performance Max Shopping placements
+- [Competitor Analysis](../competitor-analysis/) - Competitive pricing intelligence drives Shopping bid strategy adjustments
+- [Remarketing Strategy](../remarketing-strategy/) - Dynamic remarketing uses product feed data for personalized product ads
+- [MCP Server Creation](../../ai-agent-engineering/mcp-server-creation/) - Merchant Center integration via MCP enables automated feed management tools
+
 ## Keywords
 
 shopping ads, product feed, merchant center, feed optimization, custom labels, supplemental feeds, product titles, shopping campaigns, google shopping, product listing ads, competitive pricing, local inventory ads, free listings, shopping ROAS, product feed audit

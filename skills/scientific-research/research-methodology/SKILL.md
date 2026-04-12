@@ -120,6 +120,13 @@ class ResearchProtocol:
 | Cline | Full | Research protocol generation |
 | aider | Partial | Code-level support |
 
+## Related Skills
+
+- [Scientific Writing](../scientific-writing/)
+- [Data Analysis](../data-analysis/)
+- [Machine Learning](../machine-learning/)
+- [Knowledge Base RAG](../../productivity/knowledge-base-rag/)
+
 ## Keywords
 
 `research-methodology` `hypothesis-generation` `experimental-design` `literature-review` `power-analysis` `pre-registration` `peer-review` `prisma`

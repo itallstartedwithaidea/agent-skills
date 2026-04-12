@@ -113,6 +113,13 @@ def publication_map(gdf: gpd.GeoDataFrame, column: str, title: str, output: str)
 | Cline | Full | GIS workflows |
 | aider | Partial | Code generation only |
 
+## Related Skills
+
+- [Data Analysis](../data-analysis/)
+- [Machine Learning](../machine-learning/)
+- [Research Methodology](../research-methodology/)
+- [Batch Processing](../../productivity/batch-processing/)
+
 ## Keywords
 
 `geospatial` `geopandas` `satellite-imagery` `ndvi` `spatial-statistics` `gis` `rasterio` `cartography` `earth-observation`

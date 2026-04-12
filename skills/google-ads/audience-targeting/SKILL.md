@@ -271,6 +271,13 @@ The skill integrates with the Remarketing Strategy skill for advanced retargetin
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Remarketing Strategy](../remarketing-strategy/) - Remarketing lists are a core audience type; audience targeting powers retargeting orchestration
+- [PMax Optimization](../pmax-optimization/) - Audience signals are critical inputs that accelerate Performance Max learning phases
+- [Conversion Tracking](../conversion-tracking/) - Accurate conversion events ensure audience membership rules fire correctly
+- [Entity Memory Management](../../ai-agent-engineering/entity-memory-management/) - Tracks audience segments and targeting decisions across agent sessions
+
 ## Keywords
 
 audience targeting, remarketing lists, custom audiences, in-market audiences, custom intent, customer match, audience signals, performance max audiences, lookalike audiences, remarketing, RLSA, audience segmentation, audience strategy, google ads audiences, first-party data

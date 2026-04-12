@@ -147,6 +147,13 @@ export default {
 | Cline | Full | Logging + tracing setup |
 | aider | Partial | Code-level instrumentation |
 
+## Related Skills
+
+- [Cloudflare Workers](../cloudflare-workers/)
+- [CI/CD Pipelines](../ci-cd-pipelines/)
+- [Service Discovery](../service-discovery/)
+- [Agent Security Scanning](../../security/agent-security-scanning/)
+
 ## Keywords
 
 `observability` `structured-logging` `distributed-tracing` `error-monitoring` `cloudflare-workers` `alerting` `latency` `trace-id`

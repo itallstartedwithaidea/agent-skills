@@ -199,6 +199,12 @@ class PermissionBoundary:
 | Permission boundaries | ✅ Native sandbox | ✅ Limited | ✅ Native sandbox | ✅ Limited |
 | Audit logging | ✅ Full | ✅ Custom | ✅ Custom | ✅ Custom |
 
+## Related Skills
+
+- [Agent Instinct System](../agent-instinct-system/) - Pre-cognitive safety reflexes that complement adversarial defenses with automatic pre-action validation
+- [Verification Loops](../verification-loops/) - Output validation pipelines that catch adversarial content that bypasses input sanitization
+- [Self-Healing Agents](../self-healing-agents/) - Error recovery patterns that maintain agent integrity after adversarial disruption
+
 ## Keywords
 
 adversarial-resilience, prompt-injection, data-exfiltration, sandbox-escape, input-sanitization, output-filtering, permission-boundaries, secret-detection, security, agent-skills

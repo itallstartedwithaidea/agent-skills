@@ -130,6 +130,13 @@ function EmailField({ error }: { error?: string }) {
 | Cline | Full | Rule-based UI review |
 | aider | Partial | Limited design context |
 
+## Related Skills
+
+- [Composition Patterns](../composition-patterns/)
+- [React Best Practices](../react-best-practices/)
+- [View Transitions](../view-transitions/)
+- [Edge Rendering](../../infrastructure/edge-rendering/)
+
 ## Keywords
 
 `web-design` `accessibility` `wcag` `dark-mode` `responsive` `typography` `forms` `focus-states` `touch-targets` `i18n` `animation` `performance`

@@ -1,174 +1,218 @@
-# Agent Skills™ — Эталонная библиотека навыков ИИ-агентов
+<p align="center">
+  <img src="assets/images/hero-banner.png" alt="Agent Skills — 73 готовых к продакшену навыка для управления Google Ads с помощью ИИ" width="800">
+</p>
 
-![Skills](https://img.shields.io/badge/skills-73%2B-blue) ![Languages](https://img.shields.io/badge/languages-7-green) ![License](https://img.shields.io/badge/license-MIT-brightgreen) ![Platform](https://img.shields.io/badge/platform-Claude%20Code%20%7C%20Cursor%20%7C%20Codex%20%7C%20Gemini-purple)
+<p align="center">
+  <strong>73 готовых к продакшену навыка для управления Google Ads с помощью ИИ.</strong><br>
+  Создано для <a href="https://googleadsagent.ai/tools/auditor/app">Buddy Agent</a> на <a href="https://googleadsagent.ai">googleadsagent.ai</a>. Работает с Claude Code, Cursor, Codex и Gemini.
+</p>
 
-[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | **Русский** | [한국어](README.ko.md)
-
-![Buddy™ Agent](assets/screenshots/buddy-agent.png)
-
----
-
-## Что такое Agent Skills™?
-
-**Agent Skills™** — это эталонная библиотека навыков с открытым исходным кодом для управления Google Ads на основе искусственного интеллекта, специально разработанная для платформы [googleadsagent.ai™](https://googleadsagent.ai). Этот репозиторий предоставляет **более 73 готовых к производству навыков в 10 категориях**, позволяя ИИ-агентам автономно управлять, оптимизировать и масштабировать рекламные кампании Google Ads с экспертной точностью. Независимо от того, создаёте ли вы пользовательские ИИ-рабочие процессы в Cursor, Claude Code, Codex или Gemini, Agent Skills™ предоставляет вашему агенту структурированные знания и исполняемые шаблоны, необходимые для превосходства над ручным управлением кампаниями.
-
-Agent Skills™ был синтезирован из коллективного интеллекта **более 15 ведущих репозиториев с открытым исходным кодом** — включая obra/superpowers (146 тыс. звёзд), affaan-m/everything-claude-code (150 тыс. звёзд), K-Dense-AI/scientific-agent-skills (18 тыс. звёзд), vercel-labs/agent-skills (24,8 тыс. звёзд) и другие — объединяя лучшие практики архитектуры агентов, вызовов инструментов и доменной ИИ-автоматизации в единую, хорошо организованную, многоязычную библиотеку. Каждый навык следует стандартизированному формату `SKILL.md`, тщательно валидирован и предназначен для мгновенного развёртывания с Buddy™ Agent — интеллектуальным оркестратором в основе googleadsagent.ai™.
+[English](README.md) | [Francais](README.fr.md) | [Espanol](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
 
 ---
 
-## Архитектура
+## Как выглядит навык?
 
-Платформа googleadsagent.ai™ работает на основе Buddy™ Agent — мультимодельного ИИ-оркестратора, который использует Agent Skills™ для обеспечения автономного управления Google Ads в масштабе.
+Каждый навык — это один файл `SKILL.md` в именованной директории. Вот реальный навык из этого репозитория — **Keyword Research** (`skills/google-ads/keyword-research/SKILL.md`):
 
-```mermaid
-graph TB
-    User["👤 Пользователь / Рекламодатель"] --> Buddy["🤖 Buddy™ Agent"]
+```markdown
+# Keyword Research
 
-    Buddy --> Router["🔀 Мультимодельный Маршрутизатор"]
-    Router --> Claude["Claude (Anthropic)"]
-    Router --> GPT["GPT (OpenAI)"]
-    Router --> Gemini["Gemini (Google)"]
+## Описание
 
-    Buddy --> Tools["🛠️ Инструменты"]
-    Tools --> GAds["Google Ads API"]
-    Tools --> WebSearch["Веб-поиск"]
-    Tools --> PageScanner["Сканер Страниц"]
+Систематический поиск, расширение и оптимизация ключевых слов для Google Ads.
+Формирует вселенные ключевых слов из начальных запросов через семантическое
+расширение, анализ конкурентов, анализ поисковых запросов и группировку
+по намерениям. Назначает типы соответствия на основе вероятности конверсии
+и управляет списками минус-слов на уровне аккаунта, кампании и группы объявлений.
 
-    Buddy --> CF["☁️ Cloudflare Workers"]
-    CF --> KV["KV Хранилище"]
-    CF --> R2["R2 Хранилище"]
-    CF --> D1["D1 База Данных"]
-    CF --> Vectorize["Vectorize"]
+## Когда использовать
 
-    Buddy --> Skills["📚 Agent Skills™"]
-    Skills --> Cat1["Управление Кампаниями"]
-    Skills --> Cat2["Оптимизация Ключевых Слов"]
-    Skills --> Cat3["Рекламные Тексты и Креативы"]
-    Skills --> Cat4["Стратегии Ставок"]
-    Skills --> Cat5["Аналитика и Отчётность"]
+- Пользователь просит «исследование ключевых слов» или «идеи ключевых слов»
+- Пользователь хочет «расширить ключевые слова» или «найти новые ключевые слова»
+- Пользователь упоминает «минус-слова» или «анализ поисковых запросов»
+- Пользователь спрашивает о «типах соответствия» (широкое, фразовое, точное)
+- Пользователь хочет «сократить нецелевые расходы» на нерелевантные запросы
 
-    style Buddy fill:#4A90D9,stroke:#333,color:#fff
-    style Router fill:#7B68EE,stroke:#333,color:#fff
-    style Skills fill:#2ECC71,stroke:#333,color:#fff
-    style CF fill:#F39C12,stroke:#333,color:#fff
+## Реализация
+
+​```javascript
+function assignMatchType(keyword) {
+  if (keyword.conversionRate > 0.05 && keyword.volume < 1000)
+    return 'EXACT';
+  if (keyword.intent === 'transactional' && keyword.wordCount >= 3)
+    return 'PHRASE';
+  if (keyword.volume > 5000 && keyword.competitorPresence)
+    return 'BROAD';
+  return 'PHRASE';
+}
+​```
+
+## Совместимость с платформами
+
+| Платформа   | Поддержка |
+|-------------|-----------|
+| Cursor      | ✅        |
+| Claude Code | ✅        |
+| Codex       | ✅        |
+| Gemini CLI  | ✅        |
+
+## Связанные навыки
+
+- [Ad Copy Generation](../google-ads/ad-copy-generation/)
+- [Competitor Analysis](../google-ads/competitor-analysis/)
+- [Quality Score Optimization](../google-ads/quality-score-optimization/)
 ```
 
-![Архитектура Системы](assets/images/buddy-agent-architecture.png)
+Это полный формат. Каждый навык следует этой структуре:
+
+<p align="center">
+  <img src="assets/images/skill-anatomy.png" alt="Анатомия файла SKILL.md" width="800">
+</p>
+
+Подробности см. в [полной спецификации формата](docs/skill-format.md).
 
 ---
 
-## Каталог Навыков
+## Быстрый старт
 
-Agent Skills™ организует **более 73 навыков** в **10 категорий**, каждая из которых охватывает критически важную область управления Google Ads и операций ИИ-агентов.
-
-![Таксономия Навыков](assets/images/skills-taxonomy.png)
-
-| Категория | Навыки | Описание |
-|-----------|--------|----------|
-| [Управление Кампаниями](skills/campaign-management/) | 12 | Создание, приостановка, оптимизация и структурирование кампаний Поиска, КМС, PMax и Видео |
-| [Оптимизация Ключевых Слов](skills/keyword-optimization/) | 9 | Исследование ключевых слов, минус-слова, стратегия типов соответствия и анализ поисковых запросов |
-| [Рекламные Тексты и Креативы](skills/ad-copy-creative/) | 8 | Генерация RSA, оптимизация заголовков, написание описаний и фреймворки A/B-тестирования |
-| [Стратегии Ставок](skills/bidding-strategies/) | 7 | Настройка Smart Bidding, оптимизация tROAS/tCPA, портфельные стратегии и корректировки ставок |
-| [Аналитика и Отчётность](skills/analytics-reporting/) | 8 | Пользовательские панели, оповещения о производительности, моделирование атрибуции и кросс-канальные инсайты |
-| [Таргетинг Аудиторий](skills/audience-targeting/) | 6 | Списки ремаркетинга, Customer Match, похожие аудитории и демографический таргетинг |
-| [Управление Бюджетом](skills/budget-management/) | 5 | Распределение бюджета, темп расхода, прогнозирование и оптимизация общих бюджетов |
-| [Целевые Страницы и CRO](skills/landing-page-cro/) | 6 | Анализ целевых страниц, оптимизация коэффициента конверсии, аудит скорости страниц |
-| [Здоровье Аккаунта](skills/account-health/) | 7 | Улучшение Quality Score, соответствие политикам, аудиты структуры аккаунта |
-| [Инфраструктура Агентов](skills/agent-infrastructure/) | 5 | Настройка MCP-сервера, шаблоны вызовов инструментов, мультимодельная маршрутизация, управление памятью |
-
----
-
-## Быстрый Старт
-
-### Cursor
-
-```bash
-/add-plugin agent-skills
-```
-
-### Claude Code
-
-```bash
-/plugin install agent-skills
-```
-
-### npm
-
-```bash
-npx skills add itallstartedwithaidea/agent-skills
-```
-
-### Ручная Установка
+### Клонирование и использование
 
 ```bash
 git clone https://github.com/itallstartedwithaidea/agent-skills.git
 cd agent-skills
 ```
 
-После установки навыки доступны в контексте вашего агента. Каждый навык — это автономный файл `SKILL.md`, который ваш ИИ-агент загружает по запросу.
+### Валидация всех навыков
+
+```bash
+npm run validate
+```
+
+### Подсчёт навыков по категориям
+
+```bash
+npm run count
+```
+
+После клонирования направьте вашего ИИ-агента на директорию `skills/`. Каждый `SKILL.md` — самодостаточный и загружается по запросу.
 
 ---
 
-## Платформа googleadsagent.ai™
+## Каталог навыков
 
-[googleadsagent.ai™](https://googleadsagent.ai) — это ИИ-нативная платформа управления Google Ads, созданная для агентств, e-commerce брендов и маркетологов, ориентированных на результат, которые требуют автономной оптимизации кампаний экспертного уровня.
+73 навыка в 10 категориях:
 
-### Buddy™ Agent
-
-**Buddy™ Agent** — это интеллектуальный оркестратор в основе googleadsagent.ai™. Buddy™ Agent объединяет:
-
-- **База Знаний из 1 000 Паттернов** — Составлена на основе миллионов аккаунтов Google Ads, кодирующая лучшие практики для каждого типа кампании, отраслевой вертикали и сценария оптимизации
-- **Мультимодельная Маршрутизация** — Динамически выбирает оптимальную LLM (Claude, GPT, Gemini) для каждой задачи на основе стоимости, задержки и требований к возможностям
-- **Память Сущностей** — Постоянная, структурированная память, отслеживающая историю аккаунта, решения по оптимизации и тренды производительности между сессиями
-- **Вызовы Инструментов** — Нативная интеграция с Google Ads API, веб-поиском, сканерами страниц и Cloudflare Workers для извлечения данных и выполнения действий в реальном времени
-- **Интеграция Agent Skills™** — Загружает навыки из этого репозитория по запросу, предоставляя Buddy™ Agent глубокую экспертизу во всех 10 категориях
-
----
-
-## Участие
-
-Мы приветствуем вклад сообщества! Хотите ли вы добавить новый навык, улучшить существующий, исправить ошибку или перевести контент на новый язык — ваша помощь делает Agent Skills™ лучше для всех.
-
-Пожалуйста, прочитайте наше [Руководство по Участию](CONTRIBUTING.md) перед отправкой pull request.
+| Категория | Навыки | Что охватывает |
+|-----------|--------|----------------|
+| [Google Ads](skills/google-ads/) | 12 | Аудиты, ключевые слова, рекламные тексты, ставки, PMax, Shopping, аудитории, конверсии, бюджеты, Quality Score, ремаркетинг, анализ конкурентов |
+| [AI Agent Engineering](skills/ai-agent-engineering/) | 10 | Инъекция базы знаний, память сущностей, мультимодельная маршрутизация, проактивный интеллект, MCP-серверы, параллельная оркестрация |
+| [Claude Mythos](skills/claude-mythos/) | 10 | Архитектура промптов, контекстная инженерия, мастерство инструментов, самовосстанавливающиеся агенты, циклы верификации, когнитивные каркасы |
+| [Software Development](skills/software-dev/) | 8 | Код-ревью, TDD, систематическая отладка, git worktrees, мозговой штурм, разработка на субагентах |
+| [Scientific Research](skills/scientific-research/) | 8 | Анализ данных, машинное обучение, биоинформатика, хемоинформатика, геопространственный анализ, научное письмо |
+| [Web Frontend](skills/web-frontend/) | 6 | Лучшие практики React, React Native, view transitions, edge-деплой, паттерны композиции, веб-дизайн |
+| [Productivity](skills/productivity/) | 6 | Оркестрация рабочих процессов, пакетная обработка, RAG-базы знаний, AI-чат-студия, low-code-генерация |
+| [Infrastructure](skills/infrastructure/) | 6 | Cloudflare Workers, CI/CD-пайплайны, edge-рендеринг, наблюдаемость, обнаружение сервисов, управление конфигурацией |
+| [Security](skills/security/) | 4 | Сканирование безопасности агентов, CodeQL/Semgrep, укрепление песочницы, защита секретов |
+| [Media Creative](skills/media-creative/) | 3 | Генерация веб-ассетов, программатик-видео, интеграция ML-моделей |
 
 ---
 
-## Благодарности и Атрибуция
+## Формат SKILL.md
 
-Agent Skills™ был создан на плечах гигантов. Мы с благодарностью отмечаем следующие репозитории с открытым исходным кодом, чья работа информировала и вдохновила эту библиотеку:
+Каждый навык требует следующих разделов:
 
-| Репозиторий | Звёзды | Что мы синтезировали |
-|-------------|--------|----------------------|
-| [obra/superpowers](https://github.com/obra/superpowers) | 146 тыс. | Паттерны архитектуры агентов, проектирование автономных рабочих процессов |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 150 тыс. | Лучшие практики Claude Code, паттерны промпт-инженерии |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 24,8 тыс. | Спецификация формата навыков, архитектура плагинов |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 18 тыс. | Научная методология валидации и тестирования навыков |
-| [agentskills/agentskills](https://github.com/agentskills/agentskills) | — | Таксономия и фреймворк категоризации навыков |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | — | Паттерны навыков веб-производительности и оптимизации |
-| [remotion-dev/skills](https://github.com/remotion-dev/skills) | — | Навыки генерации медиа и креативной автоматизации |
-| [huggingface/skills](https://github.com/huggingface/skills) | — | Интеграция ML-моделей и паттерны навыков инференса |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | — | Паттерны оркестрации мультиагентных рабочих процессов |
-| [jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot) | — | Low-code автоматизация и паттерны быстрой разработки |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | — | Мультимодельный чат-интерфейс и дизайн взаимодействия с агентами |
-| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | — | Инструменты экосистемы Claude Code и паттерны интеграции |
-| [alibaba/nacos](https://github.com/alibaba/nacos) | — | Паттерны обнаружения сервисов и управления конфигурацией |
-| [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | — | Продвинутая композиция и цепочки навыков агентов |
-| [vercel-labs/skills](https://github.com/vercel-labs/skills) | — | Упаковка и распространение навыков, готовых к развёртыванию |
+| Раздел | Назначение |
+|--------|------------|
+| `# Title` | Читаемое название навыка |
+| `## Description` | Описание в 2–5 предложениях (индексируется для поиска) |
+| `## Use When` | Список сценариев срабатывания |
+| `## Implementation` | Фрагменты кода, алгоритмы, процедуры |
+| `## Platform Compatibility` | Таблица поддержки Cursor / Claude Code / Codex / Gemini |
+| `## Related Skills` | Ссылки на связанные навыки |
+
+Необязательно: `## Prerequisites`, `## Configuration`, `## Best Practices`, `## Limitations`, `## Keywords`
+
+Полная спецификация: [docs/skill-format.md](docs/skill-format.md)
+
+---
+
+## Архитектура
+
+Buddy Agent загружает навыки по запросу на основе распознавания намерений пользователя:
+
+```mermaid
+graph TB
+    User["User / Advertiser"] --> Buddy["Buddy Agent"]
+
+    Buddy --> Router["Multi-Model Router"]
+    Router --> Claude["Claude"]
+    Router --> GPT["GPT"]
+    Router --> Gemini["Gemini"]
+
+    Buddy --> Tools["Tool Calling"]
+    Tools --> GAds["Google Ads API v22"]
+    Tools --> WebSearch["Web Search"]
+    Tools --> PageScanner["Page Scanner"]
+
+    Buddy --> Skills["Agent Skills (this repo)"]
+    Skills --> GoogleAds["Google Ads (12)"]
+    Skills --> AgentEng["AI Agent Engineering (10)"]
+    Skills --> ClaudeMythos["Claude Mythos (10)"]
+    Skills --> SoftwareDev["Software Dev (8)"]
+    Skills --> OtherCats["+ 6 more categories"]
+
+    Buddy --> CF["Cloudflare Workers"]
+    CF --> KV["KV Store"]
+    CF --> DO["Durable Objects"]
+```
+
+Полная документация по архитектуре: [docs/architecture.md](docs/architecture.md)
+
+---
+
+## Платформа
+
+[googleadsagent.ai](https://googleadsagent.ai) — это ИИ-нативная платформа для управления Google Ads. **Buddy Agent** — интеллектуальный оркестратор в её основе:
+
+- **База знаний на 1 000 паттернов** — экспертные паттерны Google Ads с TF-IDF-сопоставлением, внедряемые в каждый ИИ-вызов
+- **Мультимодельная маршрутизация** — Claude, GPT и Gemini с вызовом инструментов на всех трёх провайдерах
+- **Память сущностей** — персистентная память, отслеживающая кампании, болевые точки, метрики и решения между сессиями через Cloudflare KV
+- **Проактивный интеллект** — ИИ автономно ищет в интернете и повторно запрашивает данные Google Ads в ходе анализа
+- **Интеграция Agent Skills** — загружает навыки из этого репозитория по запросу
+
+---
+
+## Участие в проекте
+
+Мы приветствуем вклад в проект. См. [CONTRIBUTING.md](CONTRIBUTING.md) для ознакомления с правилами.
+
+Чтобы добавить новый навык:
+
+1. Создайте директорию в соответствующей категории `skills/`
+2. Добавьте `SKILL.md` в соответствии со [спецификацией формата](docs/skill-format.md)
+3. Запустите `npm run validate`, чтобы убедиться в прохождении проверки
+4. Отправьте pull request
+
+---
+
+## Благодарности
+
+Agent Skills создан с учётом опыта этих open-source проектов:
+
+| Репозиторий | Звёзды | Чему мы научились |
+|-------------|--------|-------------------|
+| [obra/superpowers](https://github.com/obra/superpowers) | 148k | Архитектура агентов, проектирование автономных рабочих процессов |
+| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 152k | Лучшие практики Claude Code, промпт-инженерия |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 25k | Спецификация формата навыков, архитектура плагинов |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 18k | Научная методология валидации навыков |
 
 ---
 
 ## Лицензия
 
-Этот проект лицензирован под [лицензией MIT](LICENSE).
+Лицензия MIT. См. [LICENSE](LICENSE).
 
 ---
 
-<p align="center">
-  Создано с ❤️ командой <a href="https://github.com/itallstartedwithaidea">itallstartedwithaidea</a> | Работает на <a href="https://googleadsagent.ai">googleadsagent.ai™</a>
-</p>
-
----
-
-### Ключевые Слова
-
-agent skills, google ads ии, ии-агент, автоматизация google ads, buddy agent, googleadsagent, навыки claude code, навыки cursor, навыки codex, навыки gemini, mcp сервер, cloudflare workers, google ads api, управление кампаниями ии, оптимизация ключевых слов ии, генерация рекламных текстов, стратегия ставок ии, автоматизация ppc, автоматизация sem, цифровая реклама ии, мультимодельный ии-агент, оркестрация агентов, вызовы инструментов, платформа управления google ads
+Создано [John Williams](https://itallstartedwithaidea.com) | Работает на [googleadsagent.ai](https://googleadsagent.ai)

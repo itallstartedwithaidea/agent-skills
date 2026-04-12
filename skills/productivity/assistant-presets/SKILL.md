@@ -144,6 +144,13 @@ class PresetBenchmark {
 | Cline | Full | Custom instruction sets |
 | aider | Partial | Convention file support |
 
+## Related Skills
+
+- [AI Chat Studio](../ai-chat-studio/)
+- [Workflow Orchestration](../workflow-orchestration/)
+- [Multi-Model Routing](../../ai-agent-engineering/multi-model-routing/)
+- [Proactive Intelligence](../../ai-agent-engineering/proactive-intelligence/)
+
 ## Keywords
 
 `assistant-presets` `system-prompt` `persona` `domain-specific` `few-shot` `prompt-engineering` `a-b-testing` `guardrails`

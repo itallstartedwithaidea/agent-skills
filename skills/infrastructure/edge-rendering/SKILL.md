@@ -128,6 +128,13 @@ function renderPage(city: CityData, service: ServiceData): string {
 | Cline | Full | Edge architecture support |
 | aider | Partial | Template generation only |
 
+## Related Skills
+
+- [Cloudflare Workers](../cloudflare-workers/)
+- [CI/CD Pipelines](../ci-cd-pipelines/)
+- [Observability](../observability/)
+- [CodeQL & Semgrep](../../security/codeql-semgrep/)
+
 ## Keywords
 
 `edge-rendering` `city-service-pages` `cloudflare-workers` `seo` `json-ld` `stale-while-revalidate` `dynamic-pages` `structured-data`

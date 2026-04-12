@@ -118,6 +118,12 @@ class DebuggingSession:
 | Cline | Full | Step-through debugging |
 | aider | Partial | Limited to log-based debugging |
 
+## Related Skills
+
+- [Test-Driven Development](../test-driven-development/) - Write the failing test that exposes the bug before applying any fix
+- [Code Review](../code-review/) - Review the fix and regression test for quality before merging
+- [Agent Security Scanning](../../security/agent-security-scanning/) - Security-focused analysis that may identify vulnerability root causes during debugging
+
 ## Keywords
 
 `debugging` `root-cause-analysis` `systematic-debugging` `reproduce-hypothesize-test-fix` `defense-in-depth` `regression-test` `post-mortem` `bug-fix`

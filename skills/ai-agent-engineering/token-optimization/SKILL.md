@@ -206,6 +206,13 @@ class SemanticCache {
 | Background tasks | ✅ Subagents | ✅ Subagents | ✅ Async | ✅ Async |
 | Token budgets | ✅ max_tokens | ✅ max_tokens | ✅ max_tokens | ✅ max_tokens |
 
+## Related Skills
+
+- [Multi-Model Routing](../multi-model-routing/) - Model routing is the highest-leverage technique for token cost reduction
+- [Knowledge Base Injection](../knowledge-base-injection/) - Top-K pattern selection prevents context window bloat from excessive injection
+- [Memory Persistence](../memory-persistence/) - Memory injection budgets must be balanced against current-task context needs
+- [Budget Optimization](../../google-ads/budget-optimization/) - Applies analogous cost-efficiency optimization principles to ad spend allocation
+
 ## Keywords
 
 token-optimization, cost-reduction, model-routing, prompt-compression, caching, batch-processing, token-budget, model-selection, latency-optimization, agent-skills

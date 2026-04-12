@@ -160,6 +160,13 @@ class BatchProcessor:
 | Cline | Full | Batch task management |
 | aider | Partial | Sequential only |
 
+## Related Skills
+
+- [Workflow Orchestration](../workflow-orchestration/)
+- [Low-Code Generation](../low-code-generation/)
+- [Parallel Agent Orchestration](../../ai-agent-engineering/parallel-agent-orchestration/)
+- [Token Optimization](../../ai-agent-engineering/token-optimization/)
+
 ## Keywords
 
 `batch-processing` `parallel-execution` `rate-limiting` `retry-logic` `checkpointing` `dead-letter-queue` `progress-tracking` `concurrency`

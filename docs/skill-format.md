@@ -4,14 +4,7 @@
 
 ## Overview
 
-Every skill in the Agent Skills™ repository must include a `SKILL.md` file that conforms to this specification. The `SKILL.md` file is the single source of truth for a skill's purpose, behavior, compatibility, and usage. It is both human-readable documentation and machine-parseable configuration — the Buddy™ Agent's skill loader reads and interprets this file at runtime.
-
-Adhering to this format ensures that skills are:
-
-- **Discoverable** — Consistent headings enable automated indexing and search.
-- **Portable** — Platform compatibility tables let agents load skills selectively.
-- **Validatable** — CI scripts can verify format compliance before merge.
-- **Composable** — Related Skills links enable skill chaining and recommendations.
+Every skill in Agent Skills™ must include a `SKILL.md` file that conforms to this specification. The `SKILL.md` file is the single source of truth for a skill's purpose, behavior, compatibility, and usage. It is both human-readable documentation and machine-parseable configuration — Buddy™ Agent loads and interprets this file at runtime.
 
 ---
 
@@ -21,182 +14,165 @@ Every `SKILL.md` must include the following sections in this order.
 
 ### `# Skill Name`
 
-The top-level heading. Must be a single `#` heading with the human-readable skill name. This is used as the display name in the Skills Registry.
+The top-level heading. Single `#` heading with the human-readable skill name. Used as the display name in the Skills Registry.
 
-**Rules:**
-- Exactly one `#` heading per file.
-- No special characters other than hyphens and spaces.
-- Maximum 60 characters.
+- Exactly one `#` heading per file
+- Maximum 60 characters
 
 ### `## Description`
 
-A clear, concise paragraph (2–5 sentences) explaining what the skill does, what problem it solves, and who benefits from it. Avoid jargon where possible. This section is indexed for semantic search.
+A clear, concise paragraph (2–5 sentences) explaining what the skill does, what problem it solves, and who benefits from it. This section is indexed for semantic search.
 
-**Rules:**
-- Must be prose (not a bullet list).
-- Minimum 50 characters.
-- Maximum 500 characters.
+- Must be prose (not a bullet list)
+- Minimum 50 characters, maximum 500 characters
 
-### `## Use Cases`
+### `## Use When`
 
-A bullet list of concrete scenarios where this skill is useful. Each bullet should describe a specific situation, user role, or workflow.
+A bullet list of concrete scenarios where this skill should be invoked. Each bullet describes a specific user request, keyword trigger, or workflow context.
 
-**Rules:**
-- Minimum 3 bullet points.
-- Each bullet must start with `- `.
-- Use action-oriented language ("Analyze campaign performance...", "Generate ad copy...").
+- Minimum 3 bullet points
+- Each bullet starts with `- `
+- Use action-oriented language
+
+### `## Implementation`
+
+Technical details: code snippets, algorithms, API calls, or step-by-step procedures that the agent executes when this skill is activated.
+
+- At least one fenced code block with a language tag
+- Code should be realistic and runnable where possible
+- Include both input and expected output where applicable
 
 ### `## Platform Compatibility`
 
-A Markdown table indicating which AI coding platforms support this skill.
-
-**Required format:**
+A Markdown table indicating which AI platforms support this skill.
 
 ```markdown
-| Platform     | Supported |
-|--------------|-----------|
-| Cursor       | ✅ or ❌   |
-| Claude Code  | ✅ or ❌   |
-| Codex        | ✅ or ❌   |
-| Gemini CLI   | ✅ or ❌   |
+| Platform    | Supported |
+|-------------|-----------|
+| Cursor      | ✅ or ❌   |
+| Claude Code | ✅ or ❌   |
+| Codex       | ✅ or ❌   |
+| Gemini CLI  | ✅ or ❌   |
 ```
-
-**Rules:**
-- All four platforms must be listed.
-- Use ✅ for supported, ❌ for unsupported.
-- No additional columns.
-
-### `## Examples`
-
-One or more code blocks demonstrating how to invoke or use the skill. Examples should be realistic and runnable where possible.
-
-**Rules:**
-- At least one fenced code block.
-- Code blocks must have a language tag (e.g., `bash`, `json`, `python`).
-- Include both the command/input and expected output where applicable.
 
 ### `## Related Skills`
 
-A list of links to other skills in the repository that are commonly used alongside this skill or serve a complementary purpose.
+Links to other skills commonly used alongside this one.
 
-**Rules:**
-- Minimum 1 link.
-- Use relative paths: `[Skill Name](../category/skill-name/)`.
-- Links must point to valid skill directories.
+- Minimum 1 link
+- Use relative paths: `[Skill Name](../category/skill-name/)`
 
 ---
 
 ## Optional Sections
 
-The following sections are encouraged but not required.
-
 ### `## Prerequisites`
 
-Tools, APIs, credentials, or environment setup required before the skill can be used.
+Tools, APIs, credentials, or environment setup required.
 
 ### `## Configuration`
 
-Environment variables, configuration files, or settings that modify the skill's behavior.
+Environment variables or settings that modify behavior.
+
+### `## Best Practices`
+
+Expert-level guidance for optimal use of this skill.
 
 ### `## Limitations`
 
-Known constraints, unsupported scenarios, edge cases, or platform-specific issues.
+Known constraints, unsupported scenarios, or edge cases.
+
+### `## Keywords`
+
+Comma-separated terms for discovery and search indexing.
 
 ---
 
 ## Annotated Example
 
-Below is a complete, annotated `SKILL.md` for a "Campaign Budget Optimizer" skill.
-
 ```markdown
 # Campaign Budget Optimizer
 
 ## Description
-Analyzes Google Ads campaign spending patterns and recommends budget
-reallocations to maximize conversions within a fixed total budget. The skill
-examines historical cost-per-conversion data, identifies underperforming
-campaigns consuming disproportionate budget, and generates a reallocation
-plan with projected impact estimates.
 
-## Use Cases
-- Redistribute monthly budget across 10+ campaigns to reduce wasted spend
-- Identify campaigns with declining conversion rates that should receive
-  reduced budget
-- Generate a budget reallocation report for client review before month-end
-- Automate weekly budget adjustments based on rolling 7-day performance data
-- Compare current allocation against an optimal allocation model
+Analyzes Google Ads campaign spending patterns and recommends budget
+reallocations to maximize conversions within a fixed total budget. Examines
+historical cost-per-conversion data, identifies underperforming campaigns,
+and generates a reallocation plan with projected impact.
+
+## Use When
+
+- User asks to "optimize my budget" or "reallocate spend"
+- Monthly budget review is due and campaigns have 30+ days of data
+- CPA varies significantly across campaigns (>2x spread)
+- User wants to identify where budget is being wasted
+- User asks "which campaigns should get more budget?"
+
+## Implementation
+
+```python
+from google.ads.googleads.client import GoogleAdsClient
+
+def analyze_budget_allocation(client, customer_id, lookback_days=30):
+    query = """
+        SELECT campaign.name, campaign.status,
+               campaign_budget.amount_micros,
+               metrics.cost_micros, metrics.conversions,
+               metrics.cost_per_conversion
+        FROM campaign
+        WHERE segments.date DURING LAST_30_DAYS
+          AND campaign.status = 'ENABLED'
+        ORDER BY metrics.cost_micros DESC
+    """
+    response = client.get_service("GoogleAdsService").search(
+        customer_id=customer_id, query=query
+    )
+    campaigns = []
+    for row in response:
+        spend = row.metrics.cost_micros / 1e6
+        conv = row.metrics.conversions
+        cpa = spend / conv if conv > 0 else float('inf')
+        campaigns.append({
+            "name": row.campaign.name,
+            "spend": spend,
+            "conversions": conv,
+            "cpa": cpa,
+            "budget": row.campaign_budget.amount_micros / 1e6
+        })
+    return recommend_reallocation(campaigns)
+```
 
 ## Platform Compatibility
-| Platform     | Supported |
-|--------------|-----------|
-| Cursor       | ✅        |
-| Claude Code  | ✅        |
-| Codex        | ✅        |
-| Gemini CLI   | ✅        |
 
-## Prerequisites
-- Google Ads API credentials with read access to campaign and budget data
-- At least 30 days of historical campaign performance data
-- `googleads` Python library installed (`pip install google-ads`)
+| Platform    | Supported |
+|-------------|-----------|
+| Cursor      | ✅        |
+| Claude Code | ✅        |
+| Codex       | ✅        |
+| Gemini CLI  | ✅        |
 
-## Configuration
-| Variable                     | Description                          | Default  |
-|------------------------------|--------------------------------------|----------|
-| `GOOGLE_ADS_CUSTOMER_ID`     | Google Ads customer ID               | Required |
-| `LOOKBACK_DAYS`              | Days of historical data to analyze   | `30`     |
-| `MIN_CONVERSIONS`            | Minimum conversions to include       | `5`      |
-| `REALLOCATION_STRATEGY`      | `proportional` or `top-performer`    | `proportional` |
+## Best Practices
 
-## Examples
-```bash
-# Analyze and recommend budget reallocation
-agent execute --skill campaign-budget-optimizer \
-  --input "Optimize budget for customer 123-456-7890 with a $10,000 monthly cap"
-```
-
-```json
-{
-  "status": "success",
-  "recommendations": [
-    {
-      "campaign": "Brand - Exact Match",
-      "current_budget": 3000,
-      "recommended_budget": 4200,
-      "projected_conversion_lift": "+18%"
-    },
-    {
-      "campaign": "Generic - Broad Match",
-      "current_budget": 4000,
-      "recommended_budget": 2800,
-      "reason": "CPA 3.2x above account average"
-    }
-  ],
-  "total_budget": 10000,
-  "projected_overall_lift": "+12%"
-}
-```
-
-## Limitations
-- Requires a minimum of 30 days of conversion data for reliable recommendations.
-- Does not account for seasonality or upcoming promotional events.
-- Budget recommendations are directional — manual review is recommended before applying.
+- Always require 30+ days of data before recommending reallocation
+- Flag campaigns with CPA >2x the account average as candidates for reduction
+- Never reduce budget to zero — set a minimum floor of 10% original budget
+- Present changes as a before/after table for user review
 
 ## Related Skills
-- [Bid Strategy Analyzer](../optimization/bid-strategy-analyzer/)
-- [Performance Report Generator](../analytics/performance-report-generator/)
-- [Campaign Health Monitor](../advertising/campaign-health-monitor/)
+
+- [Quality Score Optimization](../google-ads/quality-score-optimization/)
+- [Competitor Analysis](../google-ads/competitor-analysis/)
+- [Conversion Tracking](../google-ads/conversion-tracking/)
 ```
 
 ---
 
 ## Validation Rules
 
-The CI pipeline runs `scripts/validate-skills.sh` on every push and pull request. A `SKILL.md` file passes validation if it meets all of the following criteria:
+The CI pipeline runs `scripts/validate-skills.sh` on every push. A `SKILL.md` passes validation if:
 
 | Rule | Check |
 |------|-------|
 | Has a top-level heading | File contains at least one line starting with `# ` |
-| Has a Description section | File contains a line starting with `## Description` |
-| Has a Use Cases section | File contains a line starting with `## Use Cases` |
-
-Additional checks may be added in future iterations, including platform compatibility table validation, minimum bullet count enforcement, and related skills link verification.
+| Has a Description section | File contains `## Description` |
+| Has a Use When section | File contains `## Use When` |

@@ -198,6 +198,12 @@ Analyze the data in the sections above and provide your recommendation.""")
 | Attention optimization | ✅ Claude-tuned | ✅ Model-dependent | ✅ Model-dependent | ✅ Gemini-tuned |
 | Zone-based assembly | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 
+## Related Skills
+
+- [Context Engineering](../context-engineering/) - Token budget enforcement and compression that works within the cognitive scaffold zones
+- [Prompt Architecture](../prompt-architecture/) - Three-layer prompt design that maps directly to cognitive scaffold anchor and foreground zones
+- [Session Archaeology](../session-archaeology/) - Mining past sessions to empirically calibrate attention curves and zone effectiveness
+
 ## Keywords
 
 cognitive-scaffolding, primacy-effect, recency-bias, chunking, attention-allocation, working-memory, context-structure, lost-in-the-middle, information-placement, agent-skills

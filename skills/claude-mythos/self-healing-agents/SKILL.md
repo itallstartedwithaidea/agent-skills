@@ -197,6 +197,12 @@ def validate_and_repair(output: str, schema: dict) -> tuple[dict, bool]:
 | Error classification | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Graceful degradation | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 
+## Related Skills
+
+- [Verification Loops](../verification-loops/) - Multi-stage validation pipelines that detect the failures self-healing agents recover from
+- [Agent Instinct System](../agent-instinct-system/) - Pre-action safety gates that prevent errors before they require self-healing
+- [Adversarial Resilience](../adversarial-resilience/) - Defense layers that handle adversarial-induced failures alongside transient and structural errors
+
 ## Keywords
 
 self-healing, error-recovery, retry-strategy, fallback-models, output-validation, graceful-degradation, strategy-mutation, error-classification, resilience, agent-skills

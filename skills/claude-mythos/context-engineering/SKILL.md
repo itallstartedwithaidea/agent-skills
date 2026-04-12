@@ -137,6 +137,12 @@ def compress_context(messages, budget_tokens):
 | Context compression | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Session summarization | ✅ Hooks | ✅ Rules | ✅ Instructions | ✅ System prompts |
 
+## Related Skills
+
+- [Cognitive Scaffolding](../cognitive-scaffolding/) - Attention-aware content placement that maximizes the value of each token in the context budget
+- [Prompt Architecture](../prompt-architecture/) - Layered prompt design that integrates with progressive disclosure and token budget allocation
+- [Anthropic Tool Mastery](../anthropic-tool-mastery/) - Tool result management that requires context-aware caching and compression strategies
+
 ## Keywords
 
 context-engineering, token-optimization, context-window, information-density, progressive-disclosure, context-compression, working-memory, token-budget, context-lifecycle, agent-skills

@@ -162,6 +162,13 @@ function generateHtmlTags(config: AssetConfig): string {
 | Cline | Full | Build pipeline setup |
 | aider | Partial | Config file generation |
 
+## Related Skills
+
+- [Programmatic Video](../programmatic-video/)
+- [ML Model Integration](../ml-model-integration/)
+- [Web Design Guidelines](../../web-frontend/web-design-guidelines/)
+- [Low-Code Generation](../../productivity/low-code-generation/)
+
 ## Keywords
 
 `favicon` `pwa-icons` `open-graph` `og-image` `twitter-card` `web-manifest` `social-meta-tags` `asset-pipeline`

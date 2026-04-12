@@ -124,6 +124,13 @@ export class BuddyAgent extends DurableObject {
 | Cline | Full | Terminal-based development |
 | aider | Partial | Config file generation |
 
+## Related Skills
+
+- [Edge Rendering](../edge-rendering/)
+- [Observability](../observability/)
+- [Service Discovery](../service-discovery/)
+- [Sandbox Hardening](../../security/sandbox-hardening/)
+
 ## Keywords
 
 `cloudflare-workers` `durable-objects` `kv` `r2` `d1` `workers-ai` `vectorize` `edge-computing` `serverless` `buddy-agent`

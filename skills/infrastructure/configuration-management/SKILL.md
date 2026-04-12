@@ -147,6 +147,13 @@ class ConfigClient<T extends Record<string, unknown>> {
 | Cline | Full | Configuration management |
 | aider | Partial | Code-level support only |
 
+## Related Skills
+
+- [Service Discovery](../service-discovery/)
+- [Observability](../observability/)
+- [CI/CD Pipelines](../ci-cd-pipelines/)
+- [Secret Protection](../../security/secret-protection/)
+
 ## Keywords
 
 `configuration-management` `hot-reload` `feature-flags` `dynamic-config` `nacos` `config-versioning` `rollback` `schema-validation`

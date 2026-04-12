@@ -116,6 +116,12 @@ class PlanExecutor:
 | Cline | Full | Task runner integration |
 | aider | Partial | No native checkpoint support |
 
+## Related Skills
+
+- [Writing Plans](../writing-plans/) - Plan authoring that produces the step-by-step specifications this skill executes
+- [Subagent-Driven Development](../subagent-driven-development/) - Parallel task dispatch that delegates plan steps to isolated subagents
+- [Git Worktrees](../git-worktrees/) - Isolated workspaces that provide clean baselines for verifying each execution step
+
 ## Keywords
 
 `plan-execution` `batch-execution` `human-checkpoints` `rollback` `progress-tracking` `verification` `state-machine` `step-by-step-execution`

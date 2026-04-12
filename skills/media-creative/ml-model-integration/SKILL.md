@@ -154,6 +154,13 @@ def finetune_lora(
 | Cline | Full | Model integration |
 | aider | Partial | Code generation only |
 
+## Related Skills
+
+- [Programmatic Video](../programmatic-video/)
+- [Web Asset Generation](../web-asset-generation/)
+- [React Best Practices](../../web-frontend/react-best-practices/)
+- [Batch Processing](../../productivity/batch-processing/)
+
 ## Keywords
 
 `huggingface` `transformers` `model-selection` `inference-pipeline` `fine-tuning` `lora` `model-evaluation` `ml-deployment`

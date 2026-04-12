@@ -99,6 +99,12 @@ Each plan step follows a rigid structure: the file to modify, the exact code cha
 | Cline | Full | Task-based planning |
 | aider | Full | Commit-per-step execution |
 
+## Related Skills
+
+- [Brainstorming](../brainstorming/) - Socratic design refinement that produces the design briefs plans are written from
+- [Executing Plans](../executing-plans/) - Batch execution engine that drives written plans through verification and rollback
+- [Subagent-Driven Development](../subagent-driven-development/) - Task decomposition that converts plan steps into isolated subagent specifications
+
 ## Keywords
 
 `planning` `task-decomposition` `step-by-step` `implementation-plan` `file-paths` `verification-steps` `atomic-steps` `handoff-ready`

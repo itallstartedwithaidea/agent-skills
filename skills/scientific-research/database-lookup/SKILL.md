@@ -139,6 +139,13 @@ class DatabaseClient:
 | Cline | Full | API integration |
 | aider | Partial | Code-level support |
 
+## Related Skills
+
+- [Bioinformatics](../bioinformatics/)
+- [Cheminformatics](../cheminformatics/)
+- [Data Analysis](../data-analysis/)
+- [Knowledge Base RAG](../../productivity/knowledge-base-rag/)
+
 ## Keywords
 
 `database-lookup` `pubchem` `chembl` `uniprot` `clinical-trials` `fred` `scientific-databases` `api-integration` `data-retrieval`

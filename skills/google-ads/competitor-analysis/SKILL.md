@@ -219,6 +219,13 @@ The skill feeds into the Budget Optimization skill (competitive pressure increas
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Keyword Research](../keyword-research/) - Competitor keyword mining reveals coverage gaps and expansion opportunities
+- [Ad Copy Generation](../ad-copy-generation/) - Competitor messaging analysis informs ad copy differentiation strategy
+- [Budget Optimization](../budget-optimization/) - Competitive pressure data drives budget defense and reallocation decisions
+- [Proactive Intelligence](../../ai-agent-engineering/proactive-intelligence/) - Autonomous web search for real-time competitive intelligence
+
 ## Keywords
 
 competitor analysis, auction insights, impression share, overlap rate, position above rate, outranking share, competitive intelligence, market share, google ads competition, competitive strategy, competitor ads, competitive landscape, search competition, bid competition, competitive monitoring

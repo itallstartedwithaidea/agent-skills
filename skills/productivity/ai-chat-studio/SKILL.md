@@ -144,6 +144,13 @@ class ConversationManager {
 | Cline | Full | Model selection config |
 | aider | Full | Multiple model backends |
 
+## Related Skills
+
+- [Assistant Presets](../assistant-presets/)
+- [Workflow Orchestration](../workflow-orchestration/)
+- [Multi-Model Routing](../../ai-agent-engineering/multi-model-routing/)
+- [Knowledge Base Injection](../../ai-agent-engineering/knowledge-base-injection/)
+
 ## Keywords
 
 `ai-chat` `multi-llm` `model-routing` `assistant-presets` `conversation-management` `streaming` `cost-optimization` `chat-studio`

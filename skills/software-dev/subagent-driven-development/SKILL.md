@@ -108,6 +108,13 @@ orchestrator:
 | Cline | Partial | Plugin-based subagent support |
 | aider | Limited | No native subagent capability |
 
+## Related Skills
+
+- [Git Worktrees](../git-worktrees/) - Isolated filesystem workspaces that prevent subagents from clobbering each other's changes
+- [Writing Plans](../writing-plans/) - Plan authoring that produces the subtask specifications subagents execute against
+- [Code Review](../code-review/) - Two-stage review process that validates subagent outputs before merge
+- [Sandbox Hardening](../../security/sandbox-hardening/) - Execution isolation that constrains subagent permissions and resource usage
+
 ## Keywords
 
 `subagent` `task-decomposition` `parallel-development` `two-stage-review` `context-isolation` `orchestrator` `spec-driven` `fresh-context`

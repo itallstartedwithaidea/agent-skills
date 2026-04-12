@@ -188,6 +188,13 @@ The audit skill feeds into downstream skills: keyword findings trigger the Keywo
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Keyword Research](../keyword-research/) - Keyword audit findings trigger keyword expansion and negative keyword mining
+- [Ad Copy Generation](../ad-copy-generation/) - Ad copy audit findings trigger new ad variant generation
+- [Quality Score Optimization](../quality-score-optimization/) - Quality Score findings drive targeted QS improvement workflows
+- [Parallel Agent Orchestration](../../ai-agent-engineering/parallel-agent-orchestration/) - Full account audits across 20 categories benefit from parallel subagent execution
+
 ## Keywords
 
 google ads audit, ppc audit, account health check, campaign review, google ads optimization, ad account analysis, ppc analysis, google ads best practices, campaign audit checklist, wasted spend analysis, google ads diagnostics, performance review, account structure audit, bidding audit, keyword audit

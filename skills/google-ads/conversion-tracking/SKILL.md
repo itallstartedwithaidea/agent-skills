@@ -234,6 +234,13 @@ For accounts with offline conversions, Buddy™ manages the automated import pip
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Google Ads Audit](../google-ads-audit/) - Conversion tracking validation is a foundational audit category
+- [Budget Optimization](../budget-optimization/) - Accurate conversion data is essential for reliable budget allocation
+- [Remarketing Strategy](../remarketing-strategy/) - Conversion events define post-conversion audience segments
+- [Knowledge Base Injection](../../ai-agent-engineering/knowledge-base-injection/) - Domain patterns power automated conversion tracking diagnostics
+
 ## Keywords
 
 conversion tracking, google tag, gtag, enhanced conversions, offline conversions, GCLID, conversion import, attribution modeling, data-driven attribution, conversion value rules, conversion actions, conversion debugging, conversion setup, google ads conversions, conversion validation

@@ -99,6 +99,12 @@ def calculate_discount(order):
 | Cline | Full | Configurable test runner |
 | aider | Partial | Manual test confirmation needed |
 
+## Related Skills
+
+- [Systematic Debugging](../systematic-debugging/) - Root cause analysis that starts by writing a failing test reproducing the bug
+- [Code Review](../code-review/) - Quality gate that verifies test coverage alongside production code changes
+- [Subagent-Driven Development](../subagent-driven-development/) - Isolated subagents that follow TDD cycles independently for each subtask
+
 ## Keywords
 
 `tdd` `test-driven-development` `red-green-refactor` `failing-test-first` `test-first` `unit-testing` `regression-prevention` `atomic-commits`

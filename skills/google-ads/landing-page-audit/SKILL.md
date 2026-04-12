@@ -241,6 +241,13 @@ For agencies managing multiple clients, Buddy™ aggregates landing page insight
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Quality Score Optimization](../quality-score-optimization/) - Landing page experience is one of three Quality Score sub-components
+- [Ad Copy Generation](../ad-copy-generation/) - Message match between ad copy and landing page content affects relevance and conversions
+- [Conversion Tracking](../conversion-tracking/) - Landing page CRO improvements directly impact conversion rates and tracking accuracy
+- [Long-Horizon Workflows](../../ai-agent-engineering/long-horizon-workflows/) - Multi-page site audits benefit from phased, checkpointed workflow execution
+
 ## Keywords
 
 landing page audit, core web vitals, page speed, conversion rate optimization, CRO, message match, CTA optimization, form optimization, mobile landing page, landing page experience, quality score landing page, LCP, INP, CLS, page performance

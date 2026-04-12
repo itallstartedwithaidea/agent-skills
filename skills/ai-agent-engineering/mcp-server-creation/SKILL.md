@@ -196,6 +196,13 @@ await server.connect(transport);
 | Tool discovery | ✅ Automatic | ✅ Automatic | ⚠️ Manual | ⚠️ Manual |
 | OAuth support | ✅ Full | ✅ Full | ⚠️ Custom | ⚠️ Custom |
 
+## Related Skills
+
+- [Multi-Model Routing](../multi-model-routing/) - MCP servers can integrate model routing logic into tool execution pipelines
+- [Knowledge Base Injection](../knowledge-base-injection/) - Knowledge search tools are exposed through MCP for agent-accessible domain expertise
+- [Parallel Agent Orchestration](../parallel-agent-orchestration/) - MCP tools enable standardized tool access for parallel subagent dispatch
+- [Shopping Ads](../../google-ads/shopping-ads/) - Merchant Center integration via MCP enables automated product feed management
+
 ## Keywords
 
 mcp-server, model-context-protocol, cloudflare-workers, tool-definitions, resource-handlers, sse-transport, stdio-transport, authentication, edge-deployment, agent-skills

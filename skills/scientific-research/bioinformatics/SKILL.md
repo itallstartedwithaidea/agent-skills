@@ -120,6 +120,13 @@ def sequence_analysis(fasta_path: str) -> dict:
 | Cline | Full | Bioinformatics workflows |
 | aider | Partial | Code-level support |
 
+## Related Skills
+
+- [Cheminformatics](../cheminformatics/)
+- [Database Lookup](../database-lookup/)
+- [Data Analysis](../data-analysis/)
+- [Batch Processing](../../productivity/batch-processing/)
+
 ## Keywords
 
 `bioinformatics` `scanpy` `single-cell` `rna-seq` `biopython` `gene-expression` `pathway-enrichment` `sequence-analysis`

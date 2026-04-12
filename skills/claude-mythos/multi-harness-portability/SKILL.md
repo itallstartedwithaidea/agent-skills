@@ -216,6 +216,12 @@ Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills)
 | Adapter layer | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Hot-reload | ✅ File watch | ✅ Native | ❌ Restart needed | ❌ Restart needed |
 
+## Related Skills
+
+- [Prompt Architecture](../prompt-architecture/) - Platform-agnostic prompt layering that forms the portable core adapted by harness-specific loaders
+- [Anthropic Tool Mastery](../anthropic-tool-mastery/) - Tool orchestration patterns that must be adapted across platform-specific tool interfaces
+- [Context Engineering](../context-engineering/) - Context management techniques that apply universally but require platform-specific token budget tuning
+
 ## Keywords
 
 multi-harness, portability, cross-platform, write-once-run-anywhere, platform-adapter, skill-installation, claude-code, cursor, codex, gemini, agent-skills

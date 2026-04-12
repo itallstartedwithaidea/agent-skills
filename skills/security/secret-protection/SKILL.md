@@ -146,6 +146,12 @@ class SecretRotationPolicy:
 | Cline | Full | Security scanning |
 | aider | Full | Pre-commit hook support |
 
+## Related Skills
+
+- [Agent Security Scanning](../agent-security-scanning/) - Broader security analysis that includes secret detection within its three-layer scanning pipeline
+- [Sandbox Hardening](../sandbox-hardening/) - Execution isolation that restricts agent access to secrets through filesystem scoping and permission boundaries
+- [CodeQL & Semgrep](../codeql-semgrep/) - Static analysis rules that detect hardcoded credentials and insecure secret handling patterns in code
+
 ## Keywords
 
 `secret-protection` `credential-leak` `pre-commit` `gitleaks` `secret-rotation` `redaction` `.env-scanning` `api-key-security`

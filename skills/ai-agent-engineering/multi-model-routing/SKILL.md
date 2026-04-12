@@ -214,6 +214,13 @@ class UnifiedModelClient:
 | Cost tracking | ✅ Custom | ✅ Custom | ✅ Custom | ✅ Custom |
 | Fallback chains | ✅ Custom | ✅ Custom | ✅ Custom | ✅ Custom |
 
+## Related Skills
+
+- [Token Optimization](../token-optimization/) - Model routing is the highest-leverage token cost optimization technique
+- [Parallel Agent Orchestration](../parallel-agent-orchestration/) - Parallel subagents benefit from uniform model selection for consistent quality
+- [MCP Server Creation](../mcp-server-creation/) - Model routing logic integrates into MCP server tool execution pipelines
+- [Budget Optimization](../../google-ads/budget-optimization/) - Portfolio optimization principles parallel the model cost-quality tradeoff
+
 ## Keywords
 
 multi-model-routing, model-selection, cost-optimization, circuit-breaker, fallback-chains, provider-resilience, task-classification, latency-routing, load-balancing, agent-skills

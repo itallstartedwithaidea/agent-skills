@@ -34,8 +34,8 @@ while IFS= read -r file; do
         errors+=("missing ## Description section")
     fi
 
-    if ! grep -q "^## Use Cases" "$file"; then
-        errors+=("missing ## Use Cases section")
+    if ! grep -q "^## Use When" "$file"; then
+        errors+=("missing ## Use When section")
     fi
 
     if [ ${#errors[@]} -eq 0 ]; then

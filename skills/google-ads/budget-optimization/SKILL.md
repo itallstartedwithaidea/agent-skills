@@ -185,6 +185,13 @@ The skill connects with the Conversion Tracking skill to ensure budget decisions
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Conversion Tracking](../conversion-tracking/) - Budget decisions must be based on accurate attribution data
+- [Quality Score Optimization](../quality-score-optimization/) - Prevents budget allocation toward campaigns with structural quality issues
+- [Competitor Analysis](../competitor-analysis/) - Competitive pressure signals justify budget defense or reallocation
+- [Token Optimization](../../ai-agent-engineering/token-optimization/) - Applies portfolio optimization principles to AI cost management
+
 ## Keywords
 
 budget optimization, budget allocation, google ads budget, campaign budget, shared budgets, portfolio bidding, ROAS optimization, budget pacing, seasonal budgets, impression share budget, budget forecasting, media planning, spend optimization, cost efficiency, budget management

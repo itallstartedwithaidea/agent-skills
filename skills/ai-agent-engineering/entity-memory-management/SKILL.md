@@ -293,6 +293,13 @@ def assemble_entity_context(entities: list[dict], max_tokens: int = 4000) -> str
 | Context injection | ✅ CLAUDE.md | ✅ Skills | ✅ Instructions | ✅ System prompts |
 | Index management | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 
+## Related Skills
+
+- [Memory Persistence](../memory-persistence/) - Provides the underlying storage and retrieval layer for entity persistence
+- [Knowledge Base Injection](../knowledge-base-injection/) - Entity context is assembled and injected alongside domain knowledge patterns
+- [Continuous Learning](../continuous-learning/) - Extracted entities feed pattern mining for automated skill derivation
+- [Google Ads Audit](../../google-ads/google-ads-audit/) - Campaign, metric, and decision entities track audit findings across sessions
+
 ## Keywords
 
 entity-memory, named-entities, cross-session-continuity, cloudflare-kv, entity-extraction, entity-types, importance-scoring, contextual-retrieval, user-preferences, agent-skills

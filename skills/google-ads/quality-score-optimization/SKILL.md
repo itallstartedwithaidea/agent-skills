@@ -208,6 +208,13 @@ The Buddy™ dashboard displays a real-time Quality Score health indicator for t
 | Codex | ✅ |
 | Gemini | ✅ |
 
+## Related Skills
+
+- [Ad Copy Generation](../ad-copy-generation/) - eCTR and ad relevance improvements require optimized ad copy
+- [Landing Page Audit](../landing-page-audit/) - Landing page experience is one of three QS sub-components
+- [Keyword Research](../keyword-research/) - Keyword-ad group alignment directly impacts ad relevance scores
+- [Memory Persistence](../../ai-agent-engineering/memory-persistence/) - Historical QS tracking across sessions enables trend analysis and regression detection
+
 ## Keywords
 
 quality score, QS optimization, expected CTR, ad relevance, landing page experience, google ads quality score, CPC reduction, ad rank improvement, quality score tracking, keyword quality, quality score components, quality score history, quality score improvement

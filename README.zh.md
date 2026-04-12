@@ -1,174 +1,218 @@
-# Agent Skills™ — 权威AI代理技能库
+<p align="center">
+  <img src="assets/images/hero-banner.png" alt="Agent Skills — 73 个生产就绪的 AI 驱动 Google Ads 管理技能" width="800">
+</p>
 
-![Skills](https://img.shields.io/badge/skills-73%2B-blue) ![Languages](https://img.shields.io/badge/languages-7-green) ![License](https://img.shields.io/badge/license-MIT-brightgreen) ![Platform](https://img.shields.io/badge/platform-Claude%20Code%20%7C%20Cursor%20%7C%20Codex%20%7C%20Gemini-purple)
+<p align="center">
+  <strong>73 个生产就绪的 AI 驱动 Google Ads 管理技能。</strong><br>
+  专为 <a href="https://googleadsagent.ai/tools/auditor/app">Buddy Agent</a> 打造，来自 <a href="https://googleadsagent.ai">googleadsagent.ai</a>。兼容 Claude Code、Cursor、Codex 和 Gemini。
+</p>
 
-[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | **中文** | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
-
-![Buddy™ Agent](assets/screenshots/buddy-agent.png)
-
----
-
-## 什么是 Agent Skills™？
-
-**Agent Skills™** 是面向AI驱动Google Ads管理的权威开源技能库，专为 [googleadsagent.ai™](https://googleadsagent.ai) 平台而构建。本仓库提供 **73+ 个生产就绪的技能，涵盖10个类别**，使AI代理能够以专家级精度自主管理、优化和扩展Google Ads广告活动。无论您是在Cursor、Claude Code、Codex还是Gemini中构建自定义AI工作流，Agent Skills™都能为您的代理提供结构化知识和可执行模式，以超越人工广告活动管理。
-
-Agent Skills™ 汇集了 **15+ 个顶级开源仓库** 的集体智慧——包括 obra/superpowers（146k星）、affaan-m/everything-claude-code（150k星）、K-Dense-AI/scientific-agent-skills（18k星）、vercel-labs/agent-skills（24.8k星）等——将代理架构、工具调用和领域特定AI自动化的最佳实践提炼为一个统一的、组织良好的多语言库。每个技能都遵循标准化的 `SKILL.md` 格式，经过严格验证，设计为可即插即用部署，配合 Buddy™ Agent——googleadsagent.ai™ 核心的智能编排器。
+[English](README.md) | [Francais](README.fr.md) | [Espanol](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
 
 ---
 
-## 架构
+## 技能长什么样？
 
-googleadsagent.ai™ 平台由 Buddy™ Agent 驱动，这是一个多模型AI编排器，利用 Agent Skills™ 大规模交付自主Google Ads管理。
+每个技能都是一个命名目录中的单个 `SKILL.md` 文件。以下是本仓库中的一个真实技能示例 — **Keyword Research**（`skills/google-ads/keyword-research/SKILL.md`）：
 
-```mermaid
-graph TB
-    User["👤 用户 / 广告主"] --> Buddy["🤖 Buddy™ Agent"]
+```markdown
+# Keyword Research
 
-    Buddy --> Router["🔀 多模型路由器"]
-    Router --> Claude["Claude (Anthropic)"]
-    Router --> GPT["GPT (OpenAI)"]
-    Router --> Gemini["Gemini (Google)"]
+## Description
 
-    Buddy --> Tools["🛠️ 工具"]
-    Tools --> GAds["Google Ads API"]
-    Tools --> WebSearch["网络搜索"]
-    Tools --> PageScanner["页面扫描器"]
+Systematic keyword discovery, expansion, and optimization for Google Ads.
+Builds keyword universes from seed keywords through semantic expansion,
+competitor mining, search term analysis, and intent-based grouping.
+Assigns match types based on conversion probability and manages negative
+keyword lists at account, campaign, and ad group levels.
 
-    Buddy --> CF["☁️ Cloudflare Workers"]
-    CF --> KV["KV 存储"]
-    CF --> R2["R2 存储"]
-    CF --> D1["D1 数据库"]
-    CF --> Vectorize["Vectorize 向量化"]
+## Use When
 
-    Buddy --> Skills["📚 Agent Skills™"]
-    Skills --> Cat1["广告活动管理"]
-    Skills --> Cat2["关键词优化"]
-    Skills --> Cat3["广告文案与创意"]
-    Skills --> Cat4["出价策略"]
-    Skills --> Cat5["分析与报告"]
+- User asks for "keyword research" or "keyword ideas"
+- User wants to "expand keywords" or "find new keywords"
+- User mentions "negative keywords" or "search term mining"
+- User asks about "match types" (broad, phrase, exact)
+- User wants to "reduce wasted spend" on irrelevant queries
 
-    style Buddy fill:#4A90D9,stroke:#333,color:#fff
-    style Router fill:#7B68EE,stroke:#333,color:#fff
-    style Skills fill:#2ECC71,stroke:#333,color:#fff
-    style CF fill:#F39C12,stroke:#333,color:#fff
+## Implementation
+
+​```javascript
+function assignMatchType(keyword) {
+  if (keyword.conversionRate > 0.05 && keyword.volume < 1000)
+    return 'EXACT';
+  if (keyword.intent === 'transactional' && keyword.wordCount >= 3)
+    return 'PHRASE';
+  if (keyword.volume > 5000 && keyword.competitorPresence)
+    return 'BROAD';
+  return 'PHRASE';
+}
+​```
+
+## Platform Compatibility
+
+| Platform    | Supported |
+|-------------|-----------|
+| Cursor      | ✅        |
+| Claude Code | ✅        |
+| Codex       | ✅        |
+| Gemini CLI  | ✅        |
+
+## Related Skills
+
+- [Ad Copy Generation](../google-ads/ad-copy-generation/)
+- [Competitor Analysis](../google-ads/competitor-analysis/)
+- [Quality Score Optimization](../google-ads/quality-score-optimization/)
 ```
 
-![系统架构](assets/images/buddy-agent-architecture.png)
+以上就是完整的格式。每个技能都遵循这一结构：
 
----
+<p align="center">
+  <img src="assets/images/skill-anatomy.png" alt="SKILL.md 文件结构解析" width="800">
+</p>
 
-## 技能目录
-
-Agent Skills™ 将 **73+ 个技能** 组织为 **10个类别**，每个类别针对Google Ads管理和AI代理运营的关键领域。
-
-![技能分类体系](assets/images/skills-taxonomy.png)
-
-| 类别 | 技能数 | 描述 |
-|------|--------|------|
-| [广告活动管理](skills/campaign-management/) | 12 | 创建、暂停、优化和构建搜索、展示、效果最大化和视频广告活动 |
-| [关键词优化](skills/keyword-optimization/) | 9 | 关键词研究、否定关键词挖掘、匹配类型策略和搜索词分析 |
-| [广告文案与创意](skills/ad-copy-creative/) | 8 | RSA生成、标题优化、描述撰写和A/B测试框架 |
-| [出价策略](skills/bidding-strategies/) | 7 | 智能出价配置、tROAS/tCPA调优、组合策略和出价调整 |
-| [分析与报告](skills/analytics-reporting/) | 8 | 自定义仪表板、性能警报、归因建模和跨渠道洞察 |
-| [受众定向](skills/audience-targeting/) | 6 | 再营销列表、客户匹配、类似受众和人口统计定向 |
-| [预算管理](skills/budget-management/) | 5 | 预算分配、支出节奏、预测和共享预算优化 |
-| [着陆页与CRO](skills/landing-page-cro/) | 6 | 着陆页分析、转化率优化、页面速度审计 |
-| [账户健康](skills/account-health/) | 7 | 质量得分提升、政策合规、账户结构审计 |
-| [代理基础设施](skills/agent-infrastructure/) | 5 | MCP服务器设置、工具调用模式、多模型路由、内存管理 |
+查看[完整格式规范](docs/skill-format.md)了解详情。
 
 ---
 
 ## 快速开始
 
-### Cursor
-
-```bash
-/add-plugin agent-skills
-```
-
-### Claude Code
-
-```bash
-/plugin install agent-skills
-```
-
-### npm
-
-```bash
-npx skills add itallstartedwithaidea/agent-skills
-```
-
-### 手动安装
+### 克隆并直接使用
 
 ```bash
 git clone https://github.com/itallstartedwithaidea/agent-skills.git
 cd agent-skills
 ```
 
-安装后，技能将在您的代理上下文中可用。每个技能是一个独立的 `SKILL.md` 文件，您的AI代理可按需加载。
+### 验证所有技能
+
+```bash
+npm run validate
+```
+
+### 按类别统计技能数量
+
+```bash
+npm run count
+```
+
+克隆后，将你的 AI 代理指向 `skills/` 目录。每个 `SKILL.md` 都是独立的，可按需加载。
 
 ---
 
-## googleadsagent.ai™ 平台
+## 技能目录
 
-[googleadsagent.ai™](https://googleadsagent.ai) 是AI原生的Google Ads管理平台，专为要求自主、专家级广告活动优化的代理商、电商品牌和效果营销人员而构建。
+73 个技能，涵盖 10 个类别：
 
-### Buddy™ Agent
+| 类别 | 技能数 | 涵盖内容 |
+|------|--------|----------|
+| [Google Ads](skills/google-ads/) | 12 | 审计、关键词、广告文案、出价、PMax、Shopping、受众、转化、预算、Quality Score、再营销、竞争对手分析 |
+| [AI Agent Engineering](skills/ai-agent-engineering/) | 10 | 知识库注入、实体记忆、多模型路由、主动智能、MCP 服务器、并行编排 |
+| [Claude Mythos](skills/claude-mythos/) | 10 | 提示词架构、上下文工程、工具精通、自修复代理、验证循环、认知脚手架 |
+| [Software Development](skills/software-dev/) | 8 | 代码审查、TDD、系统化调试、git worktrees、头脑风暴、子代理驱动开发 |
+| [Scientific Research](skills/scientific-research/) | 8 | 数据分析、机器学习、生物信息学、化学信息学、地理空间分析、科学写作 |
+| [Web Frontend](skills/web-frontend/) | 6 | React 最佳实践、React Native、视图过渡、边缘部署、组合模式、网页设计 |
+| [Productivity](skills/productivity/) | 6 | 工作流编排、批处理、RAG 知识库、AI 聊天工作室、低代码生成 |
+| [Infrastructure](skills/infrastructure/) | 6 | Cloudflare Workers、CI/CD 流水线、边缘渲染、可观测性、服务发现、配置管理 |
+| [Security](skills/security/) | 4 | 代理安全扫描、CodeQL/Semgrep、沙箱加固、密钥保护 |
+| [Media Creative](skills/media-creative/) | 3 | 网页素材生成、程序化视频、ML 模型集成 |
 
-**Buddy™ Agent** 是 googleadsagent.ai™ 核心的智能编排器。Buddy™ Agent 结合了：
+---
 
-- **1,000模式知识库** — 从数百万Google Ads账户中精选，编码每种广告活动类型、行业垂直和优化场景的最佳实践
-- **多模型路由** — 根据成本、延迟和能力要求，为每个任务动态选择最优LLM（Claude、GPT、Gemini）
-- **实体记忆** — 持久化的结构化记忆，跨会话跟踪账户历史、优化决策和性能趋势
-- **工具调用** — 与Google Ads API、网络搜索、页面扫描器和Cloudflare Workers的原生集成，实现实时数据检索和操作执行
-- **Agent Skills™ 集成** — 按需从本仓库加载技能，为 Buddy™ Agent 提供涵盖全部10个类别的深度领域专业知识
+## SKILL.md 格式
+
+每个技能需要以下部分：
+
+| 部分 | 用途 |
+|------|------|
+| `# Title` | 人类可读的技能名称 |
+| `## Description` | 2-5 句的说明（用于搜索索引） |
+| `## Use When` | 触发场景的项目符号列表 |
+| `## Implementation` | 代码片段、算法、操作步骤 |
+| `## Platform Compatibility` | Cursor / Claude Code / Codex / Gemini 兼容性表格 |
+| `## Related Skills` | 相关技能的链接 |
+
+可选部分：`## Prerequisites`、`## Configuration`、`## Best Practices`、`## Limitations`、`## Keywords`
+
+完整规范：[docs/skill-format.md](docs/skill-format.md)
+
+---
+
+## 架构
+
+Buddy Agent 根据用户意图匹配按需加载技能：
+
+```mermaid
+graph TB
+    User["User / Advertiser"] --> Buddy["Buddy Agent"]
+
+    Buddy --> Router["Multi-Model Router"]
+    Router --> Claude["Claude"]
+    Router --> GPT["GPT"]
+    Router --> Gemini["Gemini"]
+
+    Buddy --> Tools["Tool Calling"]
+    Tools --> GAds["Google Ads API v22"]
+    Tools --> WebSearch["Web Search"]
+    Tools --> PageScanner["Page Scanner"]
+
+    Buddy --> Skills["Agent Skills (this repo)"]
+    Skills --> GoogleAds["Google Ads (12)"]
+    Skills --> AgentEng["AI Agent Engineering (10)"]
+    Skills --> ClaudeMythos["Claude Mythos (10)"]
+    Skills --> SoftwareDev["Software Dev (8)"]
+    Skills --> OtherCats["+ 6 more categories"]
+
+    Buddy --> CF["Cloudflare Workers"]
+    CF --> KV["KV Store"]
+    CF --> DO["Durable Objects"]
+```
+
+完整架构文档：[docs/architecture.md](docs/architecture.md)
+
+---
+
+## 平台介绍
+
+[googleadsagent.ai](https://googleadsagent.ai) 是 AI 原生的 Google Ads 管理平台。**Buddy Agent** 是其核心的智能编排器：
+
+- **1,000 模式知识库** — 专业的 Google Ads 模式，通过 TF-IDF 匹配注入每次 AI 调用
+- **多模型路由** — Claude、GPT 和 Gemini，三个提供商均支持工具调用
+- **实体记忆** — 通过 Cloudflare KV 在会话间持久追踪广告系列、痛点、指标和决策
+- **主动智能** — AI 在分析过程中自主搜索网络并重新获取 Google Ads 数据
+- **Agent Skills 集成** — 按需从本仓库加载技能
 
 ---
 
 ## 贡献
 
-我们欢迎社区贡献！无论您想添加新技能、改进现有技能、修复错误还是将内容翻译为新语言，您的帮助都使 Agent Skills™ 对每个人都更好。
+我们欢迎贡献。请查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解指南。
 
-请在提交拉取请求前阅读我们的[贡献指南](CONTRIBUTING.md)。
+添加新技能的步骤：
+
+1. 在 `skills/` 的相应类别下创建一个目录
+2. 按照[格式规范](docs/skill-format.md)添加 `SKILL.md`
+3. 运行 `npm run validate` 确认通过验证
+4. 提交 pull request
 
 ---
 
-## 致谢与归属
+## 致谢
 
-Agent Skills™ 站在巨人的肩膀上构建。我们衷心感谢以下开源仓库，它们的工作为本库提供了信息和灵感：
+Agent Skills 受到以下开源项目的启发：
 
-| 仓库 | 星标 | 我们的综合成果 |
-|------|------|----------------|
-| [obra/superpowers](https://github.com/obra/superpowers) | 146k | 代理架构模式、自主工作流设计 |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 150k | Claude Code最佳实践、提示工程模式 |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 24.8k | 技能格式规范、插件架构 |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 18k | 技能验证和测试的科学方法论 |
-| [agentskills/agentskills](https://github.com/agentskills/agentskills) | — | 核心技能分类体系和分类框架 |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | — | Web性能和优化技能模式 |
-| [remotion-dev/skills](https://github.com/remotion-dev/skills) | — | 媒体生成和创意自动化技能 |
-| [huggingface/skills](https://github.com/huggingface/skills) | — | ML模型集成和推理技能模式 |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | — | 多代理工作流编排模式 |
-| [jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot) | — | 低代码自动化和快速开发模式 |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | — | 多模型聊天界面和代理交互设计 |
-| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | — | Claude Code生态工具和集成模式 |
-| [alibaba/nacos](https://github.com/alibaba/nacos) | — | 服务发现和配置管理模式 |
-| [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | — | 高级代理技能组合和链式调用 |
-| [vercel-labs/skills](https://github.com/vercel-labs/skills) | — | 可部署技能打包和分发 |
+| 仓库 | 星标数 | 我们学到了什么 |
+|------|--------|----------------|
+| [obra/superpowers](https://github.com/obra/superpowers) | 148k | 代理架构、自主工作流设计 |
+| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 152k | Claude Code 最佳实践、提示词工程 |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 25k | 技能格式规范、插件架构 |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 18k | 技能验证的科学方法论 |
 
 ---
 
 ## 许可证
 
-本项目采用 [MIT 许可证](LICENSE)。
+MIT 许可证。详见 [LICENSE](LICENSE)。
 
 ---
 
-<p align="center">
-  由 <a href="https://github.com/itallstartedwithaidea">itallstartedwithaidea</a> 用 ❤️ 构建 | 由 <a href="https://googleadsagent.ai">googleadsagent.ai™</a> 驱动
-</p>
-
----
-
-### 关键词
-
-agent skills, google ads ai, ai代理, google ads自动化, buddy agent, googleadsagent, claude code技能, cursor技能, codex技能, gemini技能, mcp服务器, cloudflare workers, google ads api, 广告活动管理ai, 关键词优化ai, 广告文案生成, 出价策略ai, ppc自动化, sem自动化, 数字广告ai, 多模型ai代理, 代理编排, 工具调用, google ads管理平台
+由 [John Williams](https://itallstartedwithaidea.com) 构建 | 由 [googleadsagent.ai](https://googleadsagent.ai) 驱动

@@ -142,6 +142,13 @@ jobs:
 | Cline | Full | Pipeline configuration |
 | aider | Full | YAML file editing |
 
+## Related Skills
+
+- [Cloudflare Workers](../cloudflare-workers/)
+- [Edge Rendering](../edge-rendering/)
+- [Observability](../observability/)
+- [Agent Security Scanning](../../security/agent-security-scanning/)
+
 ## Keywords
 
 `ci-cd` `github-actions` `wrangler-deploy` `html-validation` `link-checking` `lighthouse` `progressive-deployment` `quality-gates`

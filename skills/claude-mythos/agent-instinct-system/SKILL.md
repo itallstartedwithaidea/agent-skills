@@ -195,6 +195,12 @@ class ScopeValidationGate:
 | Budget enforcement | ✅ Custom hooks | ✅ Extensions | ✅ Custom | ✅ Custom |
 | Post-action audit | ✅ PostToolUse | ✅ Rules | ✅ Custom | ✅ Custom |
 
+## Related Skills
+
+- [Adversarial Resilience](../adversarial-resilience/) - Layered defense against prompt injection and data exfiltration that pairs with instinct-level protection
+- [Verification Loops](../verification-loops/) - Post-action evaluation pipelines that validate outputs after instincts approve the action
+- [Self-Healing Agents](../self-healing-agents/) - Autonomous error recovery that activates when instinct gates detect failures
+
 ## Keywords
 
 agent-instincts, pre-flight-checks, safety-gates, reflexes, destructive-operation-prevention, scope-validation, budget-ceiling, protected-files, defense-in-depth, agent-skills

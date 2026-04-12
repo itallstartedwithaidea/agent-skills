@@ -185,6 +185,12 @@ class SchemaGrader:
 | Pre-commit hooks | ✅ Native hooks | ✅ Git hooks | ✅ Git hooks | ✅ Git hooks |
 | Confidence scoring | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 
+## Related Skills
+
+- [Self-Healing Agents](../self-healing-agents/) - Error recovery that activates when verification loops reject agent outputs
+- [Agent Instinct System](../agent-instinct-system/) - Pre-action validation that prevents errors before verification is needed
+- [Prompt Architecture](../prompt-architecture/) - Schema enforcement in prompt design that reduces verification failure rates
+
 ## Keywords
 
 verification-loops, evaluation, graders, pass-at-k, llm-as-judge, confidence-scoring, checkpoint-verification, continuous-evaluation, quality-gates, agent-skills
