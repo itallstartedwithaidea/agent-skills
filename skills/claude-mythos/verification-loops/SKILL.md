@@ -1,9 +1,3 @@
----
-name: verification-loops
-description: >-
-  Verification Loops are systematic evaluation pipelines that validate agent outputs at every stage of execution.
----
-
 # Verification Loops
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)
@@ -190,6 +184,12 @@ class SchemaGrader:
 | pass@k generation | ✅ Full | ✅ Subagents | ✅ Full | ✅ Full |
 | Pre-commit hooks | ✅ Native hooks | ✅ Git hooks | ✅ Git hooks | ✅ Git hooks |
 | Confidence scoring | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
+
+## Mythos Preview Reference
+
+Anthropic’s [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/) pipeline ends with a **second agent pass** whose job is triage, not discovery: they prompt along the lines of *“I have received the following bug report. Can you please confirm if it’s real and interesting?”* to filter **true-but-low-impact** issues from severe, broadly relevant ones.
+
+Use that as a **validation-agent** pattern: after the primary agent produces a finding, spawn a fresh review with the artifact, explicit skepticism, and criteria for “real,” “important,” and “actionable.” Source: [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/).
 
 ## Related Skills
 

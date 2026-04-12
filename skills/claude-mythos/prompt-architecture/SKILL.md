@@ -1,9 +1,3 @@
----
-name: prompt-architecture
-description: >-
-  Prompt Architecture is the structural engineering of agent instructions.
----
-
 # Prompt Architecture
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)
@@ -166,6 +160,12 @@ class FewShotSelector:
 | Few-shot injection | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | XML section tags | ✅ Preferred | ✅ Supported | ✅ Supported | ✅ Supported |
 | Temperature control | ✅ API param | ⚠️ Model default | ✅ API param | ✅ API param |
+
+## Mythos Preview Reference
+
+Anthropic’s [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/) write-up shows that a **short, single-paragraph task prompt** can drive long, complex autonomous work when the harness is right: they launch an isolated container with the project, invoke Claude Code with Mythos Preview, give roughly one paragraph (e.g., ask the model to find a security issue), and **let the agent run**—reading code, experimenting, and iterating without step-by-step human steering.
+
+That pattern is a useful reference when you want **high autonomy** without over-specifying every tool call in the prompt. Treat the paragraph as the *goal and constraints*; rely on the runtime (tools, environment, verification) for execution detail. Source: [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/).
 
 ## Related Skills
 

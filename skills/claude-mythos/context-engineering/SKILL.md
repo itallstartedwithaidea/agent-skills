@@ -1,9 +1,3 @@
----
-name: context-engineering
-description: >-
-  Context Engineering is the discipline of maximizing agent output quality while minimizing token expenditure.
----
-
 # Context Engineering
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)
@@ -142,6 +136,12 @@ def compress_context(messages, budget_tokens):
 | Token counting | ✅ Anthropic API | ✅ Via extensions | ✅ tiktoken | ✅ Vertex API |
 | Context compression | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Session summarization | ✅ Hooks | ✅ Rules | ✅ Instructions | ✅ System prompts |
+
+## Mythos Preview Reference
+
+In [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/) evaluation, Anthropic **ranks each file 1–5** by how likely it is to contain interesting, vulnerability-relevant logic (e.g., constants-only files vs. network parsing or auth). They then **process the highest-ranked files first** instead of burning budget on every path equally.
+
+Adopt the same idea for any large corpus: score likely signal density up front, sort descending, and load or assign work in that order so the context window and agent time go to the **most promising** sources first. Source: [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/).
 
 ## Related Skills
 

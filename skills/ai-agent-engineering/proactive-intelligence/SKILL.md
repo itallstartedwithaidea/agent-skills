@@ -1,9 +1,3 @@
----
-name: proactive-intelligence
-description: >-
-  Proactive Intelligence enables agents to autonomously seek out external information — web searches, API re-pulls, data freshness checks — during analysis without waiting for explicit user requests.
----
-
 # Proactive Intelligence
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)
@@ -243,6 +237,12 @@ Analyze the campaign data and provide recommendations. If proactive research is 
 | Result integration | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Search budget limits | ✅ Custom | ✅ Custom | ✅ Custom | ✅ Custom |
 | Citation tracking | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
+
+## Mythos Preview Reference
+
+[Mythos Preview](https://red.anthropic.com/2026/mythos-preview/) scaffolding highlights **end-to-end autonomous chaining**: after a brief initial prompt, the model **hypothesizes from code**, **runs the program** (and tooling like debuggers) to confirm or refute, repeats as needed, then emits a structured conclusion—**discovery → exploitation → triage** in one flow—without per-step human approval.
+
+When designing proactive agents, mirror that flow: explicit triggers to **gather or re-check reality** (runs, tests, sandboxes), then fold evidence back into analysis so the chain stays grounded rather than speculative. Source: [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/).
 
 ## Related Skills
 

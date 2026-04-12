@@ -1,9 +1,3 @@
----
-name: parallel-agent-orchestration
-description: >-
-  Parallel Agent Orchestration is the discipline of dispatching, coordinating, and aggregating results from multiple concurrent subagents to dramatically accelerate complex tasks.
----
-
 # Parallel Agent Orchestration
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)
@@ -233,6 +227,12 @@ class ResultAggregator:
 | Concurrency control | ✅ Custom | ✅ Custom | ✅ Custom | ✅ Custom |
 | Result aggregation | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
 | Progress monitoring | ✅ Status updates | ✅ Background tasks | ✅ Custom | ✅ Custom |
+
+## Mythos Preview Reference
+
+Anthropic’s [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/) workload scales by running **many Claude instances in parallel**, each **focused on a different file** so parallel runs explore distinct surface area instead of rediscovering the same issue. Results are then **aggregated and de-duplicated** downstream (including validation passes).
+
+For orchestration, treat **file (or module) boundaries** as natural sharding keys, cap concurrency to respect budgets, and standardize an **aggregation contract** so partial outputs merge cleanly. Source: [Mythos Preview](https://red.anthropic.com/2026/mythos-preview/).
 
 ## Related Skills
 
