@@ -200,7 +200,7 @@ graph TB
     Router --> Gemini["Gemini"]
 
     Buddy --> Tools["Tool Calling"]
-    Tools --> GAds["Google Ads API v22"]
+    Tools --> GAds["Google Ads API v23"]
     Tools --> WebSearch["Web Search"]
     Tools --> PageScanner["Page Scanner"]
 
