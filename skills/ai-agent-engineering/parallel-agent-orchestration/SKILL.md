@@ -1,3 +1,9 @@
+---
+name: parallel-agent-orchestration
+description: >-
+  Parallel Agent Orchestration is the discipline of dispatching, coordinating, and aggregating results from multiple concurrent subagents to dramatically accelerate complex tasks.
+---
+
 # Parallel Agent Orchestration
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)

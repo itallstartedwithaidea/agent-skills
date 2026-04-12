@@ -1,3 +1,9 @@
+---
+name: proactive-intelligence
+description: >-
+  Proactive Intelligence enables agents to autonomously seek out external information — web searches, API re-pulls, data freshness checks — during analysis without waiting for explicit user requests
+---
+
 # Proactive Intelligence
 
 Part of [Agent Skills™](https://github.com/itallstartedwithaidea/agent-skills) by [googleadsagent.ai™](https://googleadsagent.ai)
